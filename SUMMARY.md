@@ -6,7 +6,9 @@
 
 * [Istio是什么](chap01/what_is_istio.md)
 * [流量管理](chap01/traffic_management.md)
-
+* [安全性](chap01/security.md)
+* [可观测性](chap01/observability.md)
+* [可扩展性](chap01/extensibility.md)
 
 ## 环境搭建
 
@@ -32,6 +34,7 @@
 ## 运维
 
 * [部署方式](chap05/deployment.md)
+  * [架构](chap05/architecture.md)
   * [部署模型](chap05/deployment_models.md)
   * [Pod和Service](chap05/requirements.md)
 * [最佳实践](chap05/best_practice.md)
