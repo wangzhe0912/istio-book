@@ -55,5 +55,4 @@
 ## FAQ
 
 * [常见问题](chap07/general.md)
-* [常见问题](chap07/setup.md)
-
+* [Tips](chap07/tips.md)
