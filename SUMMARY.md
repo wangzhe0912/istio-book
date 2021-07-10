@@ -29,6 +29,7 @@
 
 ## 示例
 
+* [快速入门](chap04/first_example.md)
 * [书店应用](chap04/bookinfo.md)
 
 ## 运维
