@@ -15,6 +15,11 @@
 * [快速入门](chap02/quickstart.md)
 * [补充说明](chap02/config_profiles.md)
 
+## 示例
+
+* [快速入门](chap04/first_example.md)
+* [书店应用](chap04/bookinfo.md)
+
 ## 功能介绍
 
 * [流量控制](chap03/traffic_management.md)
@@ -26,11 +31,6 @@
   * [查询指标](chap03/metrics.md)
   * [可视化指标](chap03/metrics.md)
   * [可视化网格](chap03/visualizing_mesh.md)
-
-## 示例
-
-* [快速入门](chap04/first_example.md)
-* [书店应用](chap04/bookinfo.md)
 
 ## 运维
 
