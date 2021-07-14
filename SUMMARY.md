@@ -43,7 +43,7 @@
 * [部署方式](chap05/deployment.md)
   * [架构](chap05/architecture.md)
   * [部署模型](chap05/deployment_models.md)
-  * [Pod和Service](chap05/requirements.md)
+  * [Pod和Service约束](chap05/requirements.md)
 * [最佳实践](chap05/best_practice.md)
   * [部署最佳实践](chap05/deployment_best_practice.md)
 * [应用集成](chap05/integration.md)
