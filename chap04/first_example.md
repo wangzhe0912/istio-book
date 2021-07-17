@@ -200,7 +200,7 @@ kubectl apply -f virtual_service.yaml -n books
 再次在客户端容器内请求业务容器试试：
 
 ```shell
-for i in `seq 10`; do http --body http://flaskapp.book/env/version; done
+for i in `seq 10`; do http --body http://flaskapp.books/env/version; done
 ```
 
 可以看到此时返回的结果预期应该已经全部都是 v2 了，对！我们的流量控制已经生效了。
