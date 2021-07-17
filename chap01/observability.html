@@ -1,0 +1,1026 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>可观测性 · title</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-bibtex-indexed-cite/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="extensibility.html" />
+    
+    
+    <link rel="prev" href="security.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"wangzhe0912","repo":"istio-book","type":"star","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Welcome
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">基本概念</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="what_is_istio.html">
+            
+                <a href="what_is_istio.html">
+            
+                    
+                    Istio是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="traffic_management.html">
+            
+                <a href="traffic_management.html">
+            
+                    
+                    流量管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="security.html">
+            
+                <a href="security.html">
+            
+                    
+                    安全性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.4" data-path="observability.html">
+            
+                <a href="observability.html">
+            
+                    
+                    可观测性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="extensibility.html">
+            
+                <a href="extensibility.html">
+            
+                    
+                    可扩展性
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">环境搭建</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../chap02/quickstart.html">
+            
+                <a href="../chap02/quickstart.html">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../chap02/config_profiles.html">
+            
+                <a href="../chap02/config_profiles.html">
+            
+                    
+                    补充说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">示例</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../chap04/first_example.html">
+            
+                <a href="../chap04/first_example.html">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../chap04/bookinfo.html">
+            
+                <a href="../chap04/bookinfo.html">
+            
+                    
+                    书店应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">功能介绍</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../chap03/traffic_management.html">
+            
+                <a href="../chap03/traffic_management.html">
+            
+                    
+                    流量控制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../chap03/request_routing.html">
+            
+                <a href="../chap03/request_routing.html">
+            
+                    
+                    请求路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../chap03/fault_injection.html">
+            
+                <a href="../chap03/fault_injection.html">
+            
+                    
+                    故障注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3" data-path="../chap03/traffic_shifting.html">
+            
+                <a href="../chap03/traffic_shifting.html">
+            
+                    
+                    流量转移
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.4" data-path="../chap03/tcp_traffic_shifting.html">
+            
+                <a href="../chap03/tcp_traffic_shifting.html">
+            
+                    
+                    TCP流量转移
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.5" data-path="../chap03/timeout.html">
+            
+                <a href="../chap03/timeout.html">
+            
+                    
+                    请求超时
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.6" data-path="../chap03/circuit_breaking.html">
+            
+                <a href="../chap03/circuit_breaking.html">
+            
+                    
+                    熔断
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.7" data-path="../chap03/mirroring.html">
+            
+                <a href="../chap03/mirroring.html">
+            
+                    
+                    镜像流量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.8" data-path="../chap03/ingress.html">
+            
+                <a href="../chap03/ingress.html">
+            
+                    
+                    入口流量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.9" data-path="../chap03/egress.html">
+            
+                <a href="../chap03/egress.html">
+            
+                    
+                    出口流量
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../chap03/observability.html">
+            
+                <a href="../chap03/observability.html">
+            
+                    
+                    可观测性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="../chap03/metrics.html">
+            
+                <a href="../chap03/metrics.html">
+            
+                    
+                    可视化指标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.2" data-path="../chap03/log.html">
+            
+                <a href="../chap03/log.html">
+            
+                    
+                    日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.3" data-path="../chap03/tracing.html">
+            
+                <a href="../chap03/tracing.html">
+            
+                    
+                    分布式追踪
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.4" data-path="../chap03/visualizing_mesh.html">
+            
+                <a href="../chap03/visualizing_mesh.html">
+            
+                    
+                    可视化网格
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">运维</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../chap05/deployment.html">
+            
+                <a href="../chap05/deployment.html">
+            
+                    
+                    部署方式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../chap05/architecture.html">
+            
+                <a href="../chap05/architecture.html">
+            
+                    
+                    架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="../chap05/deployment_models.html">
+            
+                <a href="../chap05/deployment_models.html">
+            
+                    
+                    部署模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.3" data-path="../chap05/requirements.html">
+            
+                <a href="../chap05/requirements.html">
+            
+                    
+                    Pod和Service约束
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../chap05/best_practice.html">
+            
+                <a href="../chap05/best_practice.html">
+            
+                    
+                    最佳实践
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.2.1" data-path="../chap05/deployment_best_practice.html">
+            
+                <a href="../chap05/deployment_best_practice.html">
+            
+                    
+                    部署最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../chap05/integration.html">
+            
+                <a href="../chap05/integration.html">
+            
+                    
+                    应用集成
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.3.1" data-path="../chap05/grafana.html">
+            
+                <a href="../chap05/grafana.html">
+            
+                    
+                    Grafana
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3.2" data-path="../chap05/jaegar.html">
+            
+                <a href="../chap05/jaegar.html">
+            
+                    
+                    Jaeger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3.3" data-path="../chap05/kiali.html">
+            
+                <a href="../chap05/kiali.html">
+            
+                    
+                    Kiali
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3.4" data-path="../chap05/prometheus.html">
+            
+                <a href="../chap05/prometheus.html">
+            
+                    
+                    Prometheus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3.5" data-path="../chap05/zipkin.html">
+            
+                <a href="../chap05/zipkin.html">
+            
+                    
+                    Zipkin
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">附录</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../chap06/config.html">
+            
+                <a href="../chap06/config.html">
+            
+                    
+                    配置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1.1" data-path="../chap06/virtual_service.html">
+            
+                <a href="../chap06/virtual_service.html">
+            
+                    
+                    流量管理之 VirtualService
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.2" data-path="../chap06/destination_rule.html">
+            
+                <a href="../chap06/destination_rule.html">
+            
+                    
+                    流量管理之 DestinationRule
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">FAQ</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../chap07/general.html">
+            
+                <a href="../chap07/general.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="../chap07/tips.html">
+            
+                <a href="../chap07/tips.html">
+            
+                    
+                    Tips
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >可观测性</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x53EF;&#x89C2;&#x6D4B;&#x6027;"><b></b>&#x53EF;&#x89C2;&#x6D4B;&#x6027;</a></li><ul><li><span class="title-icon "></span><a href="#&#x6307;&#x6807;"><b></b>&#x6307;&#x6807;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4EE3;&#x7406;&#x7EA7;&#x522B;&#x6307;&#x6807;"><b></b>&#x4EE3;&#x7406;&#x7EA7;&#x522B;&#x6307;&#x6807;</a></li><li><span class="title-icon "></span><a href="#&#x670D;&#x52A1;&#x7EA7;&#x522B;&#x6307;&#x6807;"><b></b>&#x670D;&#x52A1;&#x7EA7;&#x522B;&#x6307;&#x6807;</a></li><li><span class="title-icon "></span><a href="#&#x63A7;&#x5236;&#x9762;&#x6307;&#x6807;"><b></b>&#x63A7;&#x5236;&#x9762;&#x6307;&#x6807;</a></li></ul><li><span class="title-icon "></span><a href="#&#x5206;&#x5E03;&#x5F0F;&#x8FFD;&#x8E2A;"><b></b>&#x5206;&#x5E03;&#x5F0F;&#x8FFD;&#x8E2A;</a></li><li><span class="title-icon "></span><a href="#&#x8BBF;&#x95EE;&#x65E5;&#x5FD7;"><b></b>&#x8BBF;&#x95EE;&#x65E5;&#x5FD7;</a></li></ul></ul></div><a href="#&#x53EF;&#x89C2;&#x6D4B;&#x6027;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x53EF;&#x89C2;&#x6D4B;&#x6027;"><a name="&#x53EF;&#x89C2;&#x6D4B;&#x6027;" class="anchor-navigation-ex-anchor" href="#&#x53EF;&#x89C2;&#x6D4B;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53EF;&#x89C2;&#x6D4B;&#x6027;</h1>
+<p>Istio &#x4E3A;&#x7F51;&#x683C;&#x5185;&#x6240;&#x6709;&#x7684;&#x670D;&#x52A1;&#x901A;&#x4FE1;&#x751F;&#x6210;&#x8BE6;&#x7EC6;&#x7684;&#x9065;&#x6D4B;&#x6570;&#x636E;&#x3002;
+&#x8FD9;&#x79CD;&#x9065;&#x6D4B;&#x6280;&#x672F;&#x63D0;&#x4F9B;&#x4E86;&#x670D;&#x52A1;&#x884C;&#x4E3A;&#x7684;&#x53EF;&#x89C2;&#x5BDF;&#x6027;&#xFF0C;&#x4F7F;&#x8FD0;&#x7EF4;&#x4EBA;&#x5458;&#x80FD;&#x591F;&#x6392;&#x67E5;&#x6545;&#x969C;&#x3001;&#x7EF4;&#x62A4;&#x548C;&#x4F18;&#x5316;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#xFF0C;&#x800C;&#x4E0D;&#x4F1A;&#x7ED9;&#x670D;&#x52A1;&#x7684;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x5E26;&#x6765;&#x4EFB;&#x4F55;&#x989D;&#x5916;&#x7684;&#x8D1F;&#x62C5;&#x3002;</p>
+<p>&#x901A;&#x8FC7; Istio&#xFF0C;&#x8FD0;&#x7EF4;&#x4EBA;&#x5458;&#x53EF;&#x4EE5;&#x5168;&#x9762;&#x4E86;&#x89E3;&#x5230;&#x53D7;&#x76D1;&#x63A7;&#x7684;&#x670D;&#x52A1;&#x5982;&#x4F55;&#x4E0E;&#x5176;&#x4ED6;&#x670D;&#x52A1;&#x4EE5;&#x53CA; Istio &#x7EC4;&#x4EF6;&#x8FDB;&#x884C;&#x4EA4;&#x4E92;&#x3002;</p>
+<p>Istio &#x751F;&#x6210;&#x4EE5;&#x4E0B;&#x7C7B;&#x578B;&#x7684;&#x9065;&#x6D4B;&#x6570;&#x636E;&#xFF0C;&#x4EE5;&#x63D0;&#x4F9B;&#x5BF9;&#x6574;&#x4E2A;&#x670D;&#x52A1;&#x7F51;&#x683C;&#x7684;&#x53EF;&#x89C2;&#x5BDF;&#x6027;&#xFF1A;</p>
+<ul>
+<li>&#x6307;&#x6807;: Istio &#x57FA;&#x4E8E; 4 &#x4E2A;&#x76D1;&#x63A7;&#x7684;&#x9EC4;&#x91D1;&#x6807;&#x8BC6;&#xFF08;&#x5EF6;&#x8FDF;&#x3001;&#x6D41;&#x91CF;&#x3001;&#x9519;&#x8BEF;&#x3001;&#x9971;&#x548C;&#xFF09;&#x751F;&#x6210;&#x4E86;&#x4E00;&#x7CFB;&#x5217;&#x670D;&#x52A1;&#x6307;&#x6807;&#x3002;Istio &#x8FD8;&#x4E3A;&#x7F51;&#x683C;&#x63A7;&#x5236;&#x5E73;&#x9762;&#x63D0;&#x4F9B;&#x4E86;&#x66F4;&#x8BE6;&#x7EC6;&#x7684;&#x6307;&#x6807;&#x3002;&#x9664;&#x6B64;&#x4EE5;&#x5916;&#x8FD8;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x7EC4;&#x9ED8;&#x8BA4;&#x7684;&#x57FA;&#x4E8E;&#x8FD9;&#x4E9B;&#x6307;&#x6807;&#x7684;&#x7F51;&#x683C;&#x76D1;&#x63A7;&#x4EEA;&#x8868;&#x677F;&#x3002;</li>
+<li>&#x5206;&#x5E03;&#x5F0F;&#x8FFD;&#x8E2A;: Istio &#x4E3A;&#x6BCF;&#x4E2A;&#x670D;&#x52A1;&#x751F;&#x6210;&#x5206;&#x5E03;&#x5F0F;&#x8FFD;&#x8E2A; span&#xFF0C;&#x8FD0;&#x7EF4;&#x4EBA;&#x5458;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x7F51;&#x683C;&#x5185;&#x670D;&#x52A1;&#x7684;&#x4F9D;&#x8D56;&#x548C;&#x8C03;&#x7528;&#x6D41;&#x7A0B;&#x3002;</li>
+<li>&#x8BBF;&#x95EE;&#x65E5;&#x5FD7;: &#x5F53;&#x6D41;&#x91CF;&#x6D41;&#x5165;&#x7F51;&#x683C;&#x4E2D;&#x7684;&#x670D;&#x52A1;&#x65F6;&#xFF0C;Istio &#x53EF;&#x4EE5;&#x751F;&#x6210;&#x6BCF;&#x4E2A;&#x8BF7;&#x6C42;&#x7684;&#x5B8C;&#x6574;&#x8BB0;&#x5F55;&#xFF0C;&#x5305;&#x62EC;&#x6E90;&#x548C;&#x76EE;&#x6807;&#x7684;&#x5143;&#x6570;&#x636E;&#x3002;&#x6B64;&#x4FE1;&#x606F;&#x4F7F;&#x8FD0;&#x7EF4;&#x4EBA;&#x5458;&#x80FD;&#x591F;&#x5C06;&#x670D;&#x52A1;&#x884C;&#x4E3A;&#x7684;&#x5BA1;&#x67E5;&#x63A7;&#x5236;&#x5230;&#x5355;&#x4E2A;&#x5DE5;&#x4F5C;&#x8D1F;&#x8F7D;&#x5B9E;&#x4F8B;&#x7684;&#x7EA7;&#x522B;&#x3002;</li>
+</ul>
+<p>&#x4E0B;&#x9762;&#xFF0C;&#x6211;&#x4EEC;&#x6765;&#x4F9D;&#x6B21;&#x8FDB;&#x884C;&#x8BB2;&#x89E3;&#x3002;</p>
+<h2 id="&#x6307;&#x6807;"><a name="&#x6307;&#x6807;" class="anchor-navigation-ex-anchor" href="#&#x6307;&#x6807;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6307;&#x6807;</h2>
+<p>&#x6307;&#x6807;&#xFF08;Metric&#xFF09;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x4EE5;&#x805A;&#x5408;&#x7684;&#x65B9;&#x5F0F;&#x76D1;&#x63A7;&#x548C;&#x7406;&#x89E3;&#x884C;&#x4E3A;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x76D1;&#x63A7;&#x670D;&#x52A1;&#x884C;&#x4E3A;&#xFF0C;Istio &#x4E3A;&#x670D;&#x52A1;&#x7F51;&#x683C;&#x4E2D;&#x6240;&#x6709;&#x51FA;&#x5165;&#x7F51;&#x683C;&#xFF0C;&#x4EE5;&#x53CA;&#x7F51;&#x683C;&#x5185;&#x90E8;&#x7684;&#x670D;&#x52A1;&#x6D41;&#x91CF;&#x90FD;&#x751F;&#x6210;&#x4E86;&#x6307;&#x6807;&#x3002;
+&#x8FD9;&#x4E9B;&#x6307;&#x6807;&#x63D0;&#x4F9B;&#x4E86;&#x5173;&#x4E8E;&#x884C;&#x4E3A;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x4F8B;&#x5982;&#x603B;&#x6D41;&#x91CF;&#x6570;&#x3001;&#x9519;&#x8BEF;&#x7387;&#x548C;&#x8BF7;&#x6C42;&#x54CD;&#x5E94;&#x65F6;&#x95F4;&#x3002;</p>
+<p>&#x9664;&#x4E86;&#x76D1;&#x63A7;&#x7F51;&#x683C;&#x4E2D;&#x670D;&#x52A1;&#x7684;&#x884C;&#x4E3A;&#x5916;&#xFF0C;&#x76D1;&#x63A7;&#x7F51;&#x683C;&#x672C;&#x8EAB;&#x7684;&#x884C;&#x4E3A;&#x4E5F;&#x5F88;&#x91CD;&#x8981;&#x3002;
+Istio &#x7EC4;&#x4EF6;&#x53EF;&#x4EE5;&#x5BFC;&#x51FA;&#x81EA;&#x8EAB;&#x5185;&#x90E8;&#x884C;&#x4E3A;&#x7684;&#x6307;&#x6807;&#xFF0C;&#x4EE5;&#x63D0;&#x4F9B;&#x5BF9;&#x7F51;&#x683C;&#x63A7;&#x5236;&#x5E73;&#x9762;&#x7684;&#x529F;&#x80FD;&#x548C;&#x5065;&#x5EB7;&#x60C5;&#x51B5;&#x7684;&#x6D1E;&#x5BDF;&#x80FD;&#x529B;&#x3002;</p>
+<h3 id="&#x4EE3;&#x7406;&#x7EA7;&#x522B;&#x6307;&#x6807;"><a name="&#x4EE3;&#x7406;&#x7EA7;&#x522B;&#x6307;&#x6807;" class="anchor-navigation-ex-anchor" href="#&#x4EE3;&#x7406;&#x7EA7;&#x522B;&#x6307;&#x6807;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4EE3;&#x7406;&#x7EA7;&#x522B;&#x6307;&#x6807;</h3>
+<p>Istio &#x6307;&#x6807;&#x6536;&#x96C6;&#x4ECE; sidecar &#x4EE3;&#x7406;&#xFF08;Envoy&#xFF09;&#x5F00;&#x59CB;&#x3002;
+&#x6BCF;&#x4E2A;&#x4EE3;&#x7406;&#x4E3A;&#x901A;&#x8FC7;&#x5B83;&#x7684;&#x6240;&#x6709;&#x6D41;&#x91CF;&#xFF08;&#x5165;&#x7AD9;&#x548C;&#x51FA;&#x7AD9;&#xFF09;&#x751F;&#x6210;&#x4E00;&#x7EC4;&#x4E30;&#x5BCC;&#x7684;&#x6307;&#x6807;&#x3002;
+&#x4EE3;&#x7406;&#x8FD8;&#x63D0;&#x4F9B;&#x5173;&#x4E8E;&#x5B83;&#x672C;&#x8EAB;&#x7BA1;&#x7406;&#x529F;&#x80FD;&#x7684;&#x8BE6;&#x7EC6;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;&#xFF0C;&#x5305;&#x62EC;&#x914D;&#x7F6E;&#x4FE1;&#x606F;&#x548C;&#x5065;&#x5EB7;&#x4FE1;&#x606F;&#x3002;</p>
+<p>Envoy &#x751F;&#x6210;&#x7684;&#x6307;&#x6807;&#x63D0;&#x4F9B;&#x4E86;&#x8D44;&#x6E90;&#xFF08;&#x4F8B;&#x5982;&#x76D1;&#x542C;&#x5668;&#x548C;&#x96C6;&#x7FA4;&#xFF09;&#x7C92;&#x5EA6;&#x4E0A;&#x7684;&#x7F51;&#x683C;&#x76D1;&#x63A7;&#x3002;
+&#x56E0;&#x6B64;&#xFF0C;&#x4E3A;&#x4E86;&#x76D1;&#x63A7; Envoy &#x6307;&#x6807;&#xFF0C;&#x9700;&#x8981;&#x4E86;&#x89E3;&#x7F51;&#x683C;&#x670D;&#x52A1;&#x548C; Envoy &#x8D44;&#x6E90;&#x4E4B;&#x95F4;&#x7684;&#x8FDE;&#x63A5;&#x3002;</p>
+<p>Istio &#x5141;&#x8BB8;&#x8FD0;&#x7EF4;&#x4EBA;&#x5458;&#x5728;&#x6BCF;&#x4E2A;&#x5DE5;&#x4F5C;&#x8D1F;&#x8F7D;&#x5B9E;&#x4F8B;&#x4E0A;&#x9009;&#x62E9;&#x751F;&#x6210;&#x548C;&#x6536;&#x96C6;&#x54EA;&#x4E2A; Envoy &#x6307;&#x6807;&#x3002;
+&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;Istio &#x53EA;&#x652F;&#x6301; Envoy &#x751F;&#x6210;&#x7684;&#x7EDF;&#x8BA1;&#x6570;&#x636E;&#x7684;&#x4E00;&#x5C0F;&#x90E8;&#x5206;&#xFF0C;&#x4EE5;&#x907F;&#x514D;&#x4F9D;&#x8D56;&#x8FC7;&#x591A;&#x7684;&#x540E;&#x7AEF;&#x670D;&#x52A1;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x51CF;&#x5C11;&#x4E0E;&#x6307;&#x6807;&#x6536;&#x96C6;&#x76F8;&#x5173;&#x7684; CPU &#x5F00;&#x9500;&#x3002;
+&#x7136;&#x800C;&#xFF0C;&#x8FD0;&#x7EF4;&#x4EBA;&#x5458;&#x53EF;&#x4EE5;&#x5728;&#x9700;&#x8981;&#x65F6;&#x8F7B;&#x677E;&#x5730;&#x6269;&#x5C55;&#x6536;&#x96C6;&#x5230;&#x7684;&#x4EE3;&#x7406;&#x6307;&#x6807;&#x96C6;&#x3002;
+&#x8FD9;&#x652F;&#x6301;&#x6709;&#x9488;&#x5BF9;&#x6027;&#x5730;&#x8C03;&#x8BD5;&#x7F51;&#x7EDC;&#x884C;&#x4E3A;&#xFF0C;&#x540C;&#x65F6;&#x964D;&#x4F4E;&#x4E86;&#x8DE8;&#x7F51;&#x683C;&#x76D1;&#x63A7;&#x7684;&#x603B;&#x4F53;&#x6210;&#x672C;&#x3002;</p>
+<p>&#x4EE3;&#x7406;&#x7EA7;&#x522B;&#x6307;&#x6807;&#x7684;&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-shell">envoy_cluster_internal_upstream_rq{response_code_class=&quot;2xx&quot;,cluster_name=&quot;xds-grpc&quot;} 7163
+envoy_cluster_upstream_rq_completed{cluster_name=&quot;xds-grpc&quot;} 7164
+envoy_cluster_ssl_connection_error{cluster_name=&quot;xds-grpc&quot;} 0
+envoy_cluster_lb_subsets_removed{cluster_name=&quot;xds-grpc&quot;} 0
+envoy_cluster_internal_upstream_rq{response_code=&quot;503&quot;,cluster_name=&quot;xds-grpc&quot;} 1
+</code></pre>
+<h3 id="&#x670D;&#x52A1;&#x7EA7;&#x522B;&#x6307;&#x6807;"><a name="&#x670D;&#x52A1;&#x7EA7;&#x522B;&#x6307;&#x6807;" class="anchor-navigation-ex-anchor" href="#&#x670D;&#x52A1;&#x7EA7;&#x522B;&#x6307;&#x6807;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x670D;&#x52A1;&#x7EA7;&#x522B;&#x6307;&#x6807;</h3>
+<p>&#x9664;&#x4E86;&#x4EE3;&#x7406;&#x7EA7;&#x522B;&#x6307;&#x6807;&#x4E4B;&#x5916;&#xFF0C;Istio &#x8FD8;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x7EC4;&#x7528;&#x4E8E;&#x76D1;&#x63A7;&#x670D;&#x52A1;&#x901A;&#x4FE1;&#x7684;&#x9762;&#x5411;&#x670D;&#x52A1;&#x7684;&#x6307;&#x6807;&#x3002;
+&#x8FD9;&#x4E9B;&#x6307;&#x6807;&#x6DB5;&#x76D6;&#x4E86;&#x56DB;&#x4E2A;&#x57FA;&#x672C;&#x7684;&#x670D;&#x52A1;&#x76D1;&#x63A7;&#x9700;&#x6C42;&#xFF1A;&#x5EF6;&#x8FDF;&#x3001;&#x6D41;&#x91CF;&#x3001;&#x9519;&#x8BEF;&#x548C;&#x9971;&#x548C;&#x60C5;&#x51B5;&#x3002;
+Istio &#x5E26;&#x6709;&#x4E00;&#x7EC4;&#x9ED8;&#x8BA4;&#x7684;&#x4EEA;&#x8868;&#x677F;&#xFF0C;&#x7528;&#x4E8E;&#x76D1;&#x63A7;&#x57FA;&#x4E8E;&#x8FD9;&#x4E9B;&#x6307;&#x6807;&#x7684;&#x670D;&#x52A1;&#x884C;&#x4E3A;&#x3002;</p>
+<p>&#x9ED8;&#x8BA4;&#x7684; Istio &#x6307;&#x6807;&#x7531; Istio &#x63D0;&#x4F9B;&#x7684;&#x914D;&#x7F6E;&#x96C6;&#x5B9A;&#x4E49;&#x5E76;&#x9ED8;&#x8BA4;&#x5BFC;&#x51FA;&#x5230; Prometheus&#x3002;
+&#x8FD0;&#x7EF4;&#x4EBA;&#x5458;&#x53EF;&#x4EE5;&#x81EA;&#x7531;&#x5730;&#x4FEE;&#x6539;&#x8FD9;&#x4E9B;&#x6307;&#x6807;&#x7684;&#x5F62;&#x6001;&#x548C;&#x5185;&#x5BB9;&#xFF0C;&#x66F4;&#x6539;&#x5B83;&#x4EEC;&#x7684;&#x6536;&#x96C6;&#x673A;&#x5236;&#xFF0C;&#x4EE5;&#x6EE1;&#x8DB3;&#x5404;&#x81EA;&#x7684;&#x76D1;&#x63A7;&#x9700;&#x6C42;&#x3002;</p>
+<p>&#x6536;&#x96C6;&#x6307;&#x6807;&#x4EFB;&#x52A1;&#x4E3A;&#x5B9A;&#x5236; Istio &#x6307;&#x6807;&#x751F;&#x6210;&#x63D0;&#x4F9B;&#x4E86;&#x66F4;&#x8BE6;&#x7EC6;&#x7684;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x670D;&#x52A1;&#x7EA7;&#x522B;&#x6307;&#x6807;&#x7684;&#x4F7F;&#x7528;&#x5B8C;&#x5168;&#x662F;&#x53EF;&#x9009;&#x7684;&#x3002;&#x8FD0;&#x7EF4;&#x4EBA;&#x5458;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x5173;&#x95ED;&#x6307;&#x6807;&#x7684;&#x751F;&#x6210;&#x548C;&#x6536;&#x96C6;&#x6765;&#x6EE1;&#x8DB3;&#x81EA;&#x8EAB;&#x9700;&#x8981;&#x3002;</p>
+<p>&#x793A;&#x4F8B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-shell">istio_requests_total{
+  connection_security_policy=&quot;mutual_tls&quot;,
+  destination_app=&quot;details&quot;,
+  destination_canonical_service=&quot;details&quot;,
+  destination_canonical_revision=&quot;v1&quot;,
+  destination_principal=&quot;cluster.local/ns/default/sa/default&quot;,
+  destination_service=&quot;details.default.svc.cluster.local&quot;,
+  destination_service_name=&quot;details&quot;,
+  destination_service_namespace=&quot;default&quot;,
+  destination_version=&quot;v1&quot;,
+  destination_workload=&quot;details-v1&quot;,
+  destination_workload_namespace=&quot;default&quot;,
+  reporter=&quot;destination&quot;,
+  request_protocol=&quot;http&quot;,
+  response_code=&quot;200&quot;,
+  response_flags=&quot;-&quot;,
+  source_app=&quot;productpage&quot;,
+  source_canonical_service=&quot;productpage&quot;,
+  source_canonical_revision=&quot;v1&quot;,
+  source_principal=&quot;cluster.local/ns/default/sa/default&quot;,
+  source_version=&quot;v1&quot;,
+  source_workload=&quot;productpage-v1&quot;,
+  source_workload_namespace=&quot;default&quot;
+} 214
+</code></pre>
+<h3 id="&#x63A7;&#x5236;&#x9762;&#x6307;&#x6807;"><a name="&#x63A7;&#x5236;&#x9762;&#x6307;&#x6807;" class="anchor-navigation-ex-anchor" href="#&#x63A7;&#x5236;&#x9762;&#x6307;&#x6807;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x63A7;&#x5236;&#x9762;&#x6307;&#x6807;</h3>
+<p>&#x6BCF;&#x4E00;&#x4E2A; Istio &#x7684;&#x7EC4;&#x4EF6;&#xFF08;Pilot&#x3001;Galley&#x3001;Mixer&#xFF09;&#x90FD;&#x63D0;&#x4F9B;&#x4E86;&#x5BF9;&#x81EA;&#x8EAB;&#x76D1;&#x63A7;&#x6307;&#x6807;&#x7684;&#x96C6;&#x5408;&#x3002;
+&#x8FD9;&#x4E9B;&#x6307;&#x6807;&#x5BB9;&#x8BB8;&#x76D1;&#x63A7; Istio &#x81EA;&#x5DF1;&#x7684;&#x884C;&#x4E3A;&#xFF08;&#x8FD9;&#x4E0E;&#x7F51;&#x683C;&#x5185;&#x7684;&#x670D;&#x52A1;&#x6709;&#x6240;&#x4E0D;&#x540C;&#xFF09;&#x3002;</p>
+<h2 id="&#x5206;&#x5E03;&#x5F0F;&#x8FFD;&#x8E2A;"><a name="&#x5206;&#x5E03;&#x5F0F;&#x8FFD;&#x8E2A;" class="anchor-navigation-ex-anchor" href="#&#x5206;&#x5E03;&#x5F0F;&#x8FFD;&#x8E2A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5206;&#x5E03;&#x5F0F;&#x8FFD;&#x8E2A;</h2>
+<p>&#x5206;&#x5E03;&#x5F0F;&#x8FFD;&#x8E2A;&#x901A;&#x8FC7;&#x76D1;&#x63A7;&#x6D41;&#x7ECF;&#x7F51;&#x683C;&#x7684;&#x5355;&#x4E2A;&#x8BF7;&#x6C42;&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x76D1;&#x63A7;&#x548C;&#x7406;&#x89E3;&#x884C;&#x4E3A;&#x7684;&#x65B9;&#x6CD5;&#x3002;
+&#x8FFD;&#x8E2A;&#x4F7F;&#x7F51;&#x683C;&#x7684;&#x8FD0;&#x7EF4;&#x4EBA;&#x5458;&#x80FD;&#x591F;&#x7406;&#x89E3;&#x670D;&#x52A1;&#x7684;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x4EE5;&#x53CA;&#x5728;&#x670D;&#x52A1;&#x7F51;&#x683C;&#x4E2D;&#x7684;&#x5EF6;&#x8FDF;&#x6E90;&#x3002;</p>
+<p>Istio &#x652F;&#x6301;&#x901A;&#x8FC7; Envoy &#x4EE3;&#x7406;&#x8FDB;&#x884C;&#x5206;&#x5E03;&#x5F0F;&#x8FFD;&#x8E2A;&#x3002;
+&#x4EE3;&#x7406;&#x81EA;&#x52A8;&#x4E3A;&#x5176;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x751F;&#x6210;&#x8FFD;&#x8E2A; span&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x8F6C;&#x53D1;&#x9002;&#x5F53;&#x7684;&#x8BF7;&#x6C42;&#x4E0A;&#x4E0B;&#x6587;&#x5373;&#x53EF;&#x3002;</p>
+<p>Istio &#x652F;&#x6301;&#x5F88;&#x591A;&#x8FFD;&#x8E2A;&#x7CFB;&#x7EDF;&#xFF0C;&#x5305;&#x62EC; Zipkin&#x3001;Jaeger&#x3001;LightStep&#x3001;Datadog&#x3002;
+&#x8FD0;&#x7EF4;&#x4EBA;&#x5458;&#x63A7;&#x5236;&#x751F;&#x6210;&#x8FFD;&#x8E2A;&#x7684;&#x91C7;&#x6837;&#x7387;&#xFF08;&#x6BCF;&#x4E2A;&#x8BF7;&#x6C42;&#x751F;&#x6210;&#x8DDF;&#x8E2A;&#x6570;&#x636E;&#x7684;&#x901F;&#x7387;&#xFF09;&#x3002;&#x8FD9;&#x5141;&#x8BB8;&#x8FD0;&#x7EF4;&#x4EBA;&#x5458;&#x63A7;&#x5236;&#x7F51;&#x683C;&#x751F;&#x6210;&#x8FFD;&#x8E2A;&#x6570;&#x636E;&#x7684;&#x6570;&#x91CF;&#x548C;&#x901F;&#x7387;&#x3002;</p>
+<p>Istio &#x4E3A;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x751F;&#x6210;&#x7684;&#x5206;&#x5E03;&#x5F0F;&#x8FFD;&#x8E2A;&#x6570;&#x636E;&#xFF1A;</p>
+<p><img src="pictures/observability.png" alt="observability"></p>
+<h2 id="&#x8BBF;&#x95EE;&#x65E5;&#x5FD7;"><a name="&#x8BBF;&#x95EE;&#x65E5;&#x5FD7;" class="anchor-navigation-ex-anchor" href="#&#x8BBF;&#x95EE;&#x65E5;&#x5FD7;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8BBF;&#x95EE;&#x65E5;&#x5FD7;</h2>
+<p>&#x8BBF;&#x95EE;&#x65E5;&#x5FD7;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x4ECE;&#x5355;&#x4E2A;&#x5DE5;&#x4F5C;&#x8D1F;&#x8F7D;&#x5B9E;&#x4F8B;&#x7684;&#x89D2;&#x5EA6;&#x76D1;&#x63A7;&#x548C;&#x7406;&#x89E3;&#x884C;&#x4E3A;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>Istio &#x53EF;&#x4EE5;&#x4EE5;&#x4E00;&#x7EC4;&#x53EF;&#x914D;&#x7F6E;&#x7684;&#x683C;&#x5F0F;&#x96C6;&#x751F;&#x6210;&#x670D;&#x52A1;&#x6D41;&#x91CF;&#x7684;&#x8BBF;&#x95EE;&#x65E5;&#x5FD7;&#xFF0C;&#x4E3A;&#x8FD0;&#x7EF4;&#x4EBA;&#x5458;&#x63D0;&#x4F9B;&#x65E5;&#x5FD7;&#x8BB0;&#x5F55;&#x7684;&#x65B9;&#x5F0F;&#x3001;&#x5185;&#x5BB9;&#x3001;&#x65F6;&#x95F4;&#x548C;&#x4F4D;&#x7F6E;&#x7684;&#x5B8C;&#x5168;&#x63A7;&#x5236;&#x3002;</p>
+<p>Istio &#x5411;&#x8BBF;&#x95EE;&#x65E5;&#x5FD7;&#x673A;&#x5236;&#x66B4;&#x9732;&#x4E86;&#x5B8C;&#x6574;&#x7684;&#x6E90;&#x548C;&#x76EE;&#x6807;&#x5143;&#x6570;&#x636E;&#xFF0C;&#x5141;&#x8BB8;&#x5BF9;&#x7F51;&#x7EDC;&#x901A;&#x4FE1;&#x8FDB;&#x884C;&#x8BE6;&#x7EC6;&#x7684;&#x5BA1;&#x67E5;&#x3002;</p>
+<p>&#x8BBF;&#x95EE;&#x65E5;&#x5FD7;&#x53EF;&#x4EE5;&#x5728;&#x672C;&#x5730;&#x751F;&#x6210;&#xFF0C;&#x6216;&#x8005;&#x5BFC;&#x51FA;&#x5230;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x540E;&#x7AEF;&#x57FA;&#x7840;&#x8BBE;&#x65BD;&#xFF0C;&#x5305;&#x62EC; Fluentd&#x3002;</p>
+<p>Istio &#x8BBF;&#x95EE;&#x65E5;&#x5FD7;&#x793A;&#x4F8B;(JSON) &#x683C;&#x5F0F;: </p>
+<pre class="language-"><code class="lang-shell">{
+    &quot;level&quot;:&quot;info&quot;,
+    &quot;time&quot;:&quot;2019-06-11T20:57:35.424310Z&quot;,
+    &quot;instance&quot;:&quot;accesslog.instance.istio-control&quot;,
+    &quot;connection_security_policy&quot;:&quot;mutual_tls&quot;,
+    &quot;destinationApp&quot;:&quot;productpage&quot;,
+    &quot;destinationIp&quot;:&quot;10.44.2.15&quot;,
+    &quot;destinationName&quot;:&quot;productpage-v1-6db7564db8-pvsnd&quot;,
+    &quot;destinationNamespace&quot;:&quot;default&quot;,
+    &quot;destinationOwner&quot;:&quot;kubernetes://apis/apps/v1/namespaces/default/deployments/productpage-v1&quot;,
+    &quot;destinationPrincipal&quot;:&quot;cluster.local/ns/default/sa/default&quot;,
+    &quot;destinationServiceHost&quot;:&quot;productpage.default.svc.cluster.local&quot;,
+    &quot;destinationWorkload&quot;:&quot;productpage-v1&quot;,
+    &quot;httpAuthority&quot;:&quot;35.202.6.119&quot;,
+    &quot;latency&quot;:&quot;35.076236ms&quot;,
+    &quot;method&quot;:&quot;GET&quot;,
+    &quot;protocol&quot;:&quot;http&quot;,
+    &quot;receivedBytes&quot;:917,
+    &quot;referer&quot;:&quot;&quot;,
+    &quot;reporter&quot;:&quot;destination&quot;,
+    &quot;requestId&quot;:&quot;e3f7cffb-5642-434d-ae75-233a05b06158&quot;,
+    &quot;requestSize&quot;:0,
+    &quot;requestedServerName&quot;:&quot;outbound_.9080_._.productpage.default.svc.cluster.local&quot;,
+    &quot;responseCode&quot;:200,
+    &quot;responseFlags&quot;:&quot;-&quot;,
+    &quot;responseSize&quot;:4183,
+    &quot;responseTimestamp&quot;:&quot;2019-06-11T20:57:35.459150Z&quot;,
+    &quot;sentBytes&quot;:4328,
+    &quot;sourceApp&quot;:&quot;istio-ingressgateway&quot;,
+    &quot;sourceIp&quot;:&quot;10.44.0.8&quot;,
+    &quot;sourceName&quot;:&quot;ingressgateway-7748774cbf-bvf4j&quot;,
+    &quot;sourceNamespace&quot;:&quot;istio-control&quot;,
+    &quot;sourceOwner&quot;:&quot;kubernetes://apis/apps/v1/namespaces/istio-control/deployments/ingressgateway&quot;,
+    &quot;sourcePrincipal&quot;:&quot;cluster.local/ns/istio-control/sa/default&quot;,
+    &quot;sourceWorkload&quot;:&quot;ingressgateway&quot;,
+    &quot;url&quot;:&quot;/productpage&quot;,
+    &quot;userAgent&quot;:&quot;curl/7.54.0&quot;,
+    &quot;xForwardedFor&quot;:&quot;10.128.0.35&quot;
+}
+</code></pre>
+<p><footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> By <a href="https://github.com/wangzhe0912" target="_blank">wangzhe0912</a>&#xFF0C;&#x4F7F;&#x7528;<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">&#x77E5;&#x8BC6;&#x5171;&#x4EAB; &#x7F72;&#x540D;-&#x76F8;&#x540C;&#x65B9;&#x5F0F;&#x5171;&#x4EAB; 4.0&#x534F;&#x8BAE;</a>&#x53D1;&#x5E03; </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> &#x6B64;&#x9875;&#x9762;&#x4FEE;&#x8BA2;&#x4E8E;&#xFF1A; 2021-07-17 09:03:42 </span> </footer><hr><div id="vcomments"></div><script src="//unpkg.com/valine/dist/Valine.min.js"></script><script>new Valine({el: "#vcomments",appId: 'tE5W1eagY05N4M7ScOhP2gJM-gzGzoHsz',appKey: '1MzIFXCWSBYoIsM7JKg4X6So',placeholder: 'Just go go',avatar: '',meta: undefined,pageSize: 10,lang: 'zh-CN',recordIP: false})</script></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="security.html" class="navigation navigation-prev " aria-label="Previous page: 安全性">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="extensibility.html" class="navigation navigation-next " aria-label="Next page: 可扩展性">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"可观测性","level":"2.4","depth":1,"next":{"title":"可扩展性","level":"2.5","depth":1,"path":"chap01/extensibility.md","ref":"chap01/extensibility.md","articles":[]},"previous":{"title":"安全性","level":"2.3","depth":1,"path":"chap01/security.md","ref":"chap01/security.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","-sharing","github-buttons","editlink","ga","-highlight","prism","bibtex-indexed-cite","anchor-navigation-ex","page-footer-ex","splitter","copy-code-button","expandable-chapters-small","valine","donate"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"ignore":["mermaid","eval-js"],"css":["prismjs/themes/prism-solarizedlight.css"]},"editlink":{"label":"Edit","multilingual":false,"base":"https://github.com/wangzhe0912/istio-book/blob/master"},"page-footer-ex":{"copyright":"By [wangzhe0912](https://github.com/wangzhe0912)，使用[知识共享 署名-相同方式共享 4.0协议](https://creativecommons.org/licenses/by-sa/4.0/)发布","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"此页面修订于："},"splitter":{},"search-pro":{"cutWordLib":"nodejieba","defineWord":["Gitbook Use"]},"donate":{"alipay":"https://wangzhe0912.github.io/istio-book/alipay.jpg","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"https://wangzhe0912.github.io/istio-book/wechat.jpg","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"bibtex-indexed-cite":{"path":"/"},"github-buttons":{"buttons":[{"user":"wangzhe0912","repo":"istio-book","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-131910384-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"valine":{"avatar":"","lang":"zh-CN","pageSize":10,"placeholder":"Just go go","recordIP":false,"appId":"tE5W1eagY05N4M7ScOhP2gJM-gzGzoHsz","appKey":"1MzIFXCWSBYoIsM7JKg4X6So"}},"theme":"default","author":"","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"bibCount":0,"variables":{},"title":"title","bib":[],"gitbook":"*"},"file":{"path":"chap01/observability.md","mtime":"2021-07-17T09:03:42.825Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-07-17T09:04:35.078Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-editlink/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

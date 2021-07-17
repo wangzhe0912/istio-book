@@ -1,0 +1,1499 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>流量管理之 VirtualService · title</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-bibtex-indexed-cite/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="destination_rule.html" />
+    
+    
+    <link rel="prev" href="config.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"wangzhe0912","repo":"istio-book","type":"star","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Welcome
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">基本概念</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../chap01/what_is_istio.html">
+            
+                <a href="../chap01/what_is_istio.html">
+            
+                    
+                    Istio是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../chap01/traffic_management.html">
+            
+                <a href="../chap01/traffic_management.html">
+            
+                    
+                    流量管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../chap01/security.html">
+            
+                <a href="../chap01/security.html">
+            
+                    
+                    安全性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../chap01/observability.html">
+            
+                <a href="../chap01/observability.html">
+            
+                    
+                    可观测性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../chap01/extensibility.html">
+            
+                <a href="../chap01/extensibility.html">
+            
+                    
+                    可扩展性
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">环境搭建</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../chap02/quickstart.html">
+            
+                <a href="../chap02/quickstart.html">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../chap02/config_profiles.html">
+            
+                <a href="../chap02/config_profiles.html">
+            
+                    
+                    补充说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">示例</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../chap04/first_example.html">
+            
+                <a href="../chap04/first_example.html">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../chap04/bookinfo.html">
+            
+                <a href="../chap04/bookinfo.html">
+            
+                    
+                    书店应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">功能介绍</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../chap03/traffic_management.html">
+            
+                <a href="../chap03/traffic_management.html">
+            
+                    
+                    流量控制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../chap03/request_routing.html">
+            
+                <a href="../chap03/request_routing.html">
+            
+                    
+                    请求路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../chap03/fault_injection.html">
+            
+                <a href="../chap03/fault_injection.html">
+            
+                    
+                    故障注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3" data-path="../chap03/traffic_shifting.html">
+            
+                <a href="../chap03/traffic_shifting.html">
+            
+                    
+                    流量转移
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.4" data-path="../chap03/tcp_traffic_shifting.html">
+            
+                <a href="../chap03/tcp_traffic_shifting.html">
+            
+                    
+                    TCP流量转移
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.5" data-path="../chap03/timeout.html">
+            
+                <a href="../chap03/timeout.html">
+            
+                    
+                    请求超时
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.6" data-path="../chap03/circuit_breaking.html">
+            
+                <a href="../chap03/circuit_breaking.html">
+            
+                    
+                    熔断
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.7" data-path="../chap03/mirroring.html">
+            
+                <a href="../chap03/mirroring.html">
+            
+                    
+                    镜像流量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.8" data-path="../chap03/ingress.html">
+            
+                <a href="../chap03/ingress.html">
+            
+                    
+                    入口流量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.9" data-path="../chap03/egress.html">
+            
+                <a href="../chap03/egress.html">
+            
+                    
+                    出口流量
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../chap03/observability.html">
+            
+                <a href="../chap03/observability.html">
+            
+                    
+                    可观测性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="../chap03/metrics.html">
+            
+                <a href="../chap03/metrics.html">
+            
+                    
+                    可视化指标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.2" data-path="../chap03/log.html">
+            
+                <a href="../chap03/log.html">
+            
+                    
+                    日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.3" data-path="../chap03/tracing.html">
+            
+                <a href="../chap03/tracing.html">
+            
+                    
+                    分布式追踪
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.4" data-path="../chap03/visualizing_mesh.html">
+            
+                <a href="../chap03/visualizing_mesh.html">
+            
+                    
+                    可视化网格
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">运维</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../chap05/deployment.html">
+            
+                <a href="../chap05/deployment.html">
+            
+                    
+                    部署方式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../chap05/architecture.html">
+            
+                <a href="../chap05/architecture.html">
+            
+                    
+                    架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="../chap05/deployment_models.html">
+            
+                <a href="../chap05/deployment_models.html">
+            
+                    
+                    部署模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.3" data-path="../chap05/requirements.html">
+            
+                <a href="../chap05/requirements.html">
+            
+                    
+                    Pod和Service约束
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../chap05/best_practice.html">
+            
+                <a href="../chap05/best_practice.html">
+            
+                    
+                    最佳实践
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.2.1" data-path="../chap05/deployment_best_practice.html">
+            
+                <a href="../chap05/deployment_best_practice.html">
+            
+                    
+                    部署最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../chap05/integration.html">
+            
+                <a href="../chap05/integration.html">
+            
+                    
+                    应用集成
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.3.1" data-path="../chap05/grafana.html">
+            
+                <a href="../chap05/grafana.html">
+            
+                    
+                    Grafana
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3.2" data-path="../chap05/jaegar.html">
+            
+                <a href="../chap05/jaegar.html">
+            
+                    
+                    Jaeger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3.3" data-path="../chap05/kiali.html">
+            
+                <a href="../chap05/kiali.html">
+            
+                    
+                    Kiali
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3.4" data-path="../chap05/prometheus.html">
+            
+                <a href="../chap05/prometheus.html">
+            
+                    
+                    Prometheus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3.5" data-path="../chap05/zipkin.html">
+            
+                <a href="../chap05/zipkin.html">
+            
+                    
+                    Zipkin
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">附录</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="config.html">
+            
+                <a href="config.html">
+            
+                    
+                    配置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="7.1.1" data-path="virtual_service.html">
+            
+                <a href="virtual_service.html">
+            
+                    
+                    流量管理之 VirtualService
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.2" data-path="destination_rule.html">
+            
+                <a href="destination_rule.html">
+            
+                    
+                    流量管理之 DestinationRule
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">FAQ</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../chap07/general.html">
+            
+                <a href="../chap07/general.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="../chap07/tips.html">
+            
+                <a href="../chap07/tips.html">
+            
+                    
+                    Tips
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >流量管理之 VirtualService</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#virtualservice-&#x914D;&#x7F6E;&#x8BE6;&#x89E3;"><b></b>VirtualService &#x914D;&#x7F6E;&#x8BE6;&#x89E3;</a></li><ul><li><span class="title-icon "></span><a href="#&#x57FA;&#x672C;&#x6982;&#x5FF5;"><b></b>&#x57FA;&#x672C;&#x6982;&#x5FF5;</a></li><li><span class="title-icon "></span><a href="#virtualservice"><b></b>VirtualService</a></li><li><span class="title-icon "></span><a href="#httproute"><b></b>HTTPRoute</a></li><li><span class="title-icon "></span><a href="#httpmatchrequest"><b></b>HTTPMatchRequest</a></li><li><span class="title-icon "></span><a href="#httproutedestination"><b></b>HTTPRouteDestination</a></li><li><span class="title-icon "></span><a href="#destination"><b></b>Destination</a></li><li><span class="title-icon "></span><a href="#portselector"><b></b>PortSelector</a></li><li><span class="title-icon "></span><a href="#httpredirect"><b></b>HTTPRedirect</a></li><li><span class="title-icon "></span><a href="#httprewrite"><b></b>HTTPRewrite</a></li><li><span class="title-icon "></span><a href="#duration"><b></b>Duration</a></li><li><span class="title-icon "></span><a href="#httpretry"><b></b>HTTPRetry</a></li><li><span class="title-icon "></span><a href="#httpfaultinjection"><b></b>HTTPFaultInjection</a></li><li><span class="title-icon "></span><a href="#headers"><b></b>Headers</a></li><li><span class="title-icon "></span><a href="#headeroperations"><b></b>HeaderOperations</a></li></ul></ul></div><a href="#virtualservice-&#x914D;&#x7F6E;&#x8BE6;&#x89E3;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="virtualservice-&#x914D;&#x7F6E;&#x8BE6;&#x89E3;"><a name="virtualservice-&#x914D;&#x7F6E;&#x8BE6;&#x89E3;" class="anchor-navigation-ex-anchor" href="#virtualservice-&#x914D;&#x7F6E;&#x8BE6;&#x89E3;"><i class="fa fa-link" aria-hidden="true"></i></a>VirtualService &#x914D;&#x7F6E;&#x8BE6;&#x89E3;</h1>
+<h2 id="&#x57FA;&#x672C;&#x6982;&#x5FF5;"><a name="&#x57FA;&#x672C;&#x6982;&#x5FF5;" class="anchor-navigation-ex-anchor" href="#&#x57FA;&#x672C;&#x6982;&#x5FF5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x57FA;&#x672C;&#x6982;&#x5FF5;</h2>
+<p><strong>Service</strong> &#x662F;&#x7ED1;&#x5B9A;&#x5230;&#x670D;&#x52A1;&#x6CE8;&#x518C;&#x8868;&#x4E2D;&#x552F;&#x4E00;&#x540D;&#x79F0;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x884C;&#x4E3A;&#x5355;&#x5143;&#x3002;
+Service &#x7531;&#x5728; pod&#x3001;&#x5BB9;&#x5668;&#x3001;VM &#x7B49;&#x4E0A;&#x8FD0;&#x884C;&#x7684;&#x5DE5;&#x4F5C;&#x8D1F;&#x8F7D;&#x5B9E;&#x4F8B;&#x5B9E;&#x73B0;&#x7684;&#x591A;&#x4E2A;&#x7F51;&#x7EDC;&#x7AEF;&#x70B9;&#x7EC4;&#x6210;&#x3002;</p>
+<p><strong>Service Version(&#x79F0;&#x4E4B;&#x4E3A; subset)</strong> &#x662F;&#x6307;&#x5728;&#x6301;&#x7EED;&#x90E8;&#x7F72;&#x573A;&#x666F;&#x4E2D;&#xFF0C;&#x5BF9;&#x4E8E;&#x7ED9;&#x5B9A;&#x7684;&#x670D;&#x52A1;&#xFF0C;&#x53EF;&#x4EE5;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x5B9E;&#x4F8B;&#x5B50;&#x96C6;&#xFF0C;&#x5B83;&#x4EEC;&#x8FD0;&#x884C;&#x7740;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#x7684;&#x7248;&#x672C;&#x53EF;&#x80FD;&#x4E0D;&#x540C;&#x3002;
+&#x4F8B;&#x5982;&#xFF0C;&#x5B83;&#x4EEC;&#x63D0;&#x4F9B;&#x7684; API &#x7684;&#x7248;&#x672C;&#x53EF;&#x80FD;&#x4E0D;&#x540C;&#xFF0C;&#x5B83;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x5BF9;&#x540C;&#x4E00;&#x670D;&#x52A1;&#x7684;&#x8FED;&#x4EE3;&#x66F4;&#x6539;&#xFF0C;&#x90E8;&#x7F72;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x73AF;&#x5883;&#xFF08;&#x751F;&#x4EA7;&#x3001;&#x6682;&#x5B58;&#x3001;&#x5F00;&#x53D1;&#x7B49;&#xFF09;&#x4E2D;&#x3002;
+&#x5176;&#x4E2D;&#xFF0C;A/B &#x6D4B;&#x8BD5;&#x3001;&#x91D1;&#x4E1D;&#x96C0;&#x53D1;&#x5E03;&#x7B49;&#x5E38;&#x7528;&#x573A;&#x666F;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x5229;&#x7528;&#x7740;&#x76F8;&#x5173;&#x7684;&#x7279;&#x6027;&#x3002;
+&#x5728; VirtualService &#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5404;&#x79CD;&#x89C4;&#x5219;&#xFF08;&#x4F8B;&#x5982;url, headers&#xFF09;&#x7B49;&#x6765;&#x51B3;&#x5B9A;&#x8BBF;&#x95EE;&#x5177;&#x4F53;&#x4E0D;&#x540C;&#x7248;&#x672C;&#x7684;&#x6743;&#x91CD;&#x3002;
+&#x6B64;&#x5916;&#xFF0C;&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A; VirtualService &#x800C;&#x8A00;&#xFF0C;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x4F1A;&#x5C06;&#x8BF7;&#x6C42;&#x53D1;&#x7ED9;&#x5B83;&#x7684;&#x6240;&#x6709;&#x5B9E;&#x4F8B;&#x3002;</p>
+<p><strong>Source</strong> &#x662F;&#x6307;&#x8C03;&#x7528;&#x670D;&#x52A1;&#x7684;&#x4E0B;&#x6E38;&#x5BA2;&#x6237;&#x7AEF;&#x3002;</p>
+<p><strong>Host</strong> &#x662F;&#x6307;&#x5BA2;&#x6237;&#x7AEF;&#x5C1D;&#x8BD5;&#x8FDE;&#x63A5;&#x5230;&#x670D;&#x52A1;&#x65F6;&#x4F7F;&#x7528;&#x7684;&#x5730;&#x5740;&#x3002;</p>
+<p><strong>Access model</strong> &#x4E0B;&#x6E38;&#x670D;&#x52A1;&#x5728;&#x8BBF;&#x95EE;&#x76EE;&#x6807;&#x65F6;&#xFF0C;&#x4EC5;&#x4EC5;&#x9700;&#x8981;&#x6307;&#x6807;&#x76EE;&#x6807;&#x670D;&#x52A1;&#x7684;&#x5730;&#x5740;&#xFF08;Host&#xFF09;&#xFF0C;&#x800C;&#x4E0D;&#x9700;&#x8981;&#x4E86;&#x89E3;&#x5355;&#x4E2A;&#x670D;&#x52A1;&#x7248;&#x672C;&#xFF08;Subset&#xFF09;&#xFF0C;
+&#x800C;&#x5177;&#x4F53;&#x8BF7;&#x6C42;&#x4E0B;&#x53D1;&#x5230;&#x54EA;&#x4E2A;&#x7248;&#x672C;&#x7684;&#x5B9E;&#x4F8B;&#x4E0A;&#x9762;&#xFF0C;&#x5219;&#x662F;&#x6709; Sidecar &#x6765;&#x8FDB;&#x884C;&#x51B3;&#x7B56;&#xFF0C;&#x4ECE;&#x800C;&#x4F7F;&#x5F97;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#x80FD;&#x591F;&#x5C06;&#x81EA;&#x8EAB;&#x4E0E;&#x4F9D;&#x8D56;&#x670D;&#x52A1;&#x7684;&#x6F14;&#x53D8;&#x8FDB;&#x884C;&#x89E3;&#x8026;&#x3002;</p>
+<p>VirtualService &#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x7EC4;&#x8981;&#x5728;&#x8BBF;&#x95EE; host &#x65F6;&#x5E94;&#x7528;&#x7684;&#x6D41;&#x91CF;&#x8DEF;&#x7531;&#x89C4;&#x5219;&#xFF0C;&#x6BCF;&#x4E2A;&#x8DEF;&#x7531;&#x89C4;&#x5219;&#x5B9A;&#x4E49;&#x4E86;&#x7279;&#x5B9A;&#x534F;&#x8BAE;&#x6D41;&#x91CF;&#x7684;&#x5339;&#x914D;&#x89C4;&#x5219;&#x3002;
+&#x5982;&#x679C;&#x6D41;&#x91CF;&#x7684;&#x5339;&#x914D;&#x89C4;&#x5219;&#x6EE1;&#x8DB3;&#x7684;&#x8BDD;&#xFF0C;&#x5219;&#x5C06;&#x5176;&#x53D1;&#x9001;&#x5230;&#x914D;&#x7F6E;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x76EE;&#x6807;&#x670D;&#x52A1;&#xFF08;&#x6216;&#x5176;&#x5B50;&#x96C6;/&#x7248;&#x672C;&#xFF09;&#x4E2D;&#x3002;</p>
+<p>&#x8BF7;&#x6C42;&#x6765;&#x6E90;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x8DEF;&#x7531;&#x89C4;&#x5219;&#x4E2D;&#x8FDB;&#x884C;&#x6761;&#x4EF6;&#x5339;&#x914D;&#xFF0C;&#x901A;&#x8FC7;&#x8FD9;&#x4E00;&#x673A;&#x5236;&#xFF0C;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x4E3A;&#x7279;&#x5B9A;&#x5BA2;&#x6237;&#x7AEF;&#x5B9A;&#x5236;&#x8DEF;&#x7531;&#x673A;&#x5236;&#x3002;</p>
+<p>&#x4EE5;&#x4E0B; Kubernetes &#x793A;&#x4F8B;&#x9ED8;&#x8BA4;&#x5C06;&#x6240;&#x6709; HTTP &#x6D41;&#x91CF;&#x8DEF;&#x7531;&#x5230;&#x5E26;&#x6709;&#x6807;&#x7B7E;&#x201C;version: v1&#x201D;&#x7684;&#x8BC4;&#x8BBA;&#x670D;&#x52A1;&#x7684; pod&#x3002;
+&#x6B64;&#x5916;&#xFF0C;url&#x4EE5; <code>/wpcatalog/</code> &#x6216; <code>/consumercatalog/</code> &#x5F00;&#x5934;&#x7684; HTTP &#x8BF7;&#x6C42;&#x5C06;&#x88AB;&#x91CD;&#x5199;&#x4E3A; <code>/newcatalog</code> &#x5E76;&#x53D1;&#x9001;&#x5230;&#x6807;&#x7B7E;&#x4E3A;&#x201C;version: v2&#x201D;&#x7684; pod&#x3002;</p>
+<pre class="language-"><code class="lang-yaml"><span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> networking.istio.io/v1alpha3
+<span class="token key atrule">kind</span><span class="token punctuation">:</span> VirtualService
+<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> reviews<span class="token punctuation">-</span>route
+<span class="token key atrule">spec</span><span class="token punctuation">:</span>
+  <span class="token key atrule">hosts</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> reviews.prod.svc.cluster.local
+  <span class="token key atrule">http</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> <span class="token string">&quot;reviews-v2-routes&quot;</span>
+    <span class="token key atrule">match</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">uri</span><span class="token punctuation">:</span>
+        <span class="token key atrule">prefix</span><span class="token punctuation">:</span> <span class="token string">&quot;/wpcatalog&quot;</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">uri</span><span class="token punctuation">:</span>
+        <span class="token key atrule">prefix</span><span class="token punctuation">:</span> <span class="token string">&quot;/consumercatalog&quot;</span>
+    <span class="token key atrule">rewrite</span><span class="token punctuation">:</span>
+      <span class="token key atrule">uri</span><span class="token punctuation">:</span> <span class="token string">&quot;/newcatalog&quot;</span>
+    <span class="token key atrule">route</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">destination</span><span class="token punctuation">:</span>
+        <span class="token key atrule">host</span><span class="token punctuation">:</span> reviews.prod.svc.cluster.local
+        <span class="token key atrule">subset</span><span class="token punctuation">:</span> v2
+  <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> <span class="token string">&quot;reviews-v1-route&quot;</span>
+    <span class="token key atrule">route</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">destination</span><span class="token punctuation">:</span>
+        <span class="token key atrule">host</span><span class="token punctuation">:</span> reviews.prod.svc.cluster.local
+        <span class="token key atrule">subset</span><span class="token punctuation">:</span> v1
+</code></pre>
+<p>&#x5176;&#x4E2D;&#xFF0C;&#x8DEF;&#x7531;&#x76EE;&#x7684;&#x5730;&#x7684;&#x5B50;&#x96C6;/&#x7248;&#x672C;&#x901A;&#x8FC7;&#x5BF9;&#x547D;&#x540D;&#x670D;&#x52A1;&#x5B50;&#x96C6;&#x7684;&#x5F15;&#x7528;&#x6765;&#x6807;&#x8BC6;&#xFF0C;&#x8BE5;&#x5B50;&#x96C6;&#x5FC5;&#x987B;&#x5728;&#x76F8;&#x5E94;&#x7684; <strong>DestinationRule</strong> &#x4E2D;&#x58F0;&#x660E;&#xFF0C;&#x793A;&#x4F8B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-yaml"><span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> networking.istio.io/v1alpha3
+<span class="token key atrule">kind</span><span class="token punctuation">:</span> DestinationRule
+<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> reviews<span class="token punctuation">-</span>destination
+<span class="token key atrule">spec</span><span class="token punctuation">:</span>
+  <span class="token key atrule">host</span><span class="token punctuation">:</span> reviews.prod.svc.cluster.local
+  <span class="token key atrule">subsets</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> v1
+    <span class="token key atrule">labels</span><span class="token punctuation">:</span>
+      <span class="token key atrule">version</span><span class="token punctuation">:</span> v1
+  <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> v2
+    <span class="token key atrule">labels</span><span class="token punctuation">:</span>
+      <span class="token key atrule">version</span><span class="token punctuation">:</span> v2
+</code></pre>
+<p>&#x4E0B;&#x9762;&#xFF0C;&#x6211;&#x4EEC;&#x6765;&#x5BF9;&#x5176;&#x4E2D;&#x7684;&#x4E00;&#x4E9B;&#x6838;&#x5FC3;&#x914D;&#x7F6E;&#x5B57;&#x6BB5;&#x7684;&#x914D;&#x7F6E;&#x4FE1;&#x606F;&#x6765;&#x4F9D;&#x6B21;&#x8FDB;&#x884C;&#x8BE6;&#x7EC6;&#x7684;&#x8BF4;&#x660E;&#x3002;</p>
+<h2 id="virtualservice"><a name="virtualservice" class="anchor-navigation-ex-anchor" href="#virtualservice"><i class="fa fa-link" aria-hidden="true"></i></a>VirtualService</h2>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x5B57;&#x6BB5;&#x529F;&#x80FD;&#x63CF;&#x8FF0;</th>
+<th>&#x662F;&#x5426;&#x5FC5;&#x586B;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>hosts</td>
+<td>string[]</td>
+<td>&#x6D41;&#x91CF;&#x7684;&#x76EE;&#x6807;&#x4E3B;&#x673A;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;&#x5E26;&#x6709;&#x901A;&#x914D;&#x7B26;&#x524D;&#x7F00;&#x7684;DNS&#x540D;&#x79F0;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;IP&#x5730;&#x5740;&#x3002;&#x6839;&#x636E;&#x6240;&#x5728;&#x5E73;&#x53F0;&#x60C5;&#x51B5;&#xFF0C;&#x8FD8;&#x53EF;&#x80FD;&#x4F7F;&#x7528;&#x77ED;&#x540D;&#x79F0;&#x6765;&#x4EE3;&#x66FF;FQDN&#x3002;&#x8FD9;&#x79CD;&#x573A;&#x666F;&#x4E0B;&#xFF0C;&#x77ED;&#x540D;&#x79F0;&#x5230; FQDN &#x7684;&#x5177;&#x4F53;&#x8F6C;&#x6362;&#x8FC7;&#x7A0B;&#x662F;&#x8981;&#x9760;&#x4E0B;&#x5C42;&#x5E73;&#x53F0;&#x5B8C;&#x6210;&#x7684;&#x3002;&#x4E00;&#x4E2A; VirtualService &#x4E2D;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x63A7;&#x5236;&#x591A;&#x4E2A; HTTP &#x548C; TCP &#x7AEF;&#x53E3;&#x7684;&#x6D41;&#x91CF;&#x5C5E;&#x6027;&#xFF0C;&#x53CD;&#x4E4B;&#xFF0C;&#x4E00;&#x4E2A;&#x76EE;&#x6807;&#x5730;&#x5740;&#x7684;&#x6D41;&#x91CF;&#x5C5E;&#x6027;&#x4E5F;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x5728;&#x591A;&#x4E2A; VirtualService &#x4E2D;&#x8FDB;&#x884C;&#x5B9A;&#x4E49;&#x3002;&#x5BF9;&#x4E8E;K8s&#x7528;&#x6237;&#x800C;&#x8A00;&#xFF0C;&#x5F53;&#x4F7F;&#x7528;&#x77ED;&#x670D;&#x52A1;&#x540D;&#xFF08;&#x5982;reviews&#xFF0C;&#x800C;&#x4E0D;&#x662F;reviews.default.svc.cluster.local&#xFF09;&#x65F6;&#xFF0C;Istio&#x4F1A;&#x5C06;&#x77ED;&#x670D;&#x52A1;&#x540D;&#x4E0E; VirtualService &#x5B9A;&#x4E49;&#x6240;&#x5C5E;&#x7684;namespace&#x6765;&#x8FDB;&#x884C;&#x62FC;&#x63A5;&#xFF0C;&#x800C;&#x4E0D;&#x662F;K8s Service&#x672C;&#x8EAB;&#x6240;&#x5C5E;&#x7684;namespace&#x3002;&#x4E3A;&#x4E86;&#x907F;&#x514D;&#x6F5C;&#x5728;&#x7684;&#x9519;&#x8BEF;&#x914D;&#x7F6E;&#xFF0C;&#x5EFA;&#x8BAE;&#x59CB;&#x7EC8;&#x4F7F;&#x7528;&#x5B8C;&#x5168;&#x9650;&#x5B9A;&#x57DF;&#x540D;&#x800C;&#x4E0D;&#x662F;&#x77ED;&#x540D;&#x79F0;&#x3002;hosts &#x5B57;&#x6BB5;&#x9002;&#x7528;&#x4E8E; HTTP &#x548C; TCP &#x670D;&#x52A1;&#x3002;&#x7F51;&#x683C;&#x5185;&#x7684;&#x670D;&#x52A1;&#xFF0C;&#x5373;&#x5728;&#x670D;&#x52A1;&#x6CE8;&#x518C;&#x8868;&#x4E2D;&#x627E;&#x5230;&#x7684;&#x670D;&#x52A1;&#xFF0C;&#x5FC5;&#x987B;&#x59CB;&#x7EC8;&#x4F7F;&#x7528;&#x5B83;&#x4EEC;&#x7684;&#x5B57;&#x6BCD;&#x6570;&#x5B57;&#x540D;&#x79F0;&#x6765;&#x5F15;&#x7528;&#x3002; IP &#x5730;&#x5740;&#x53EA;&#x5141;&#x8BB8;&#x7528;&#x4E8E;&#x901A;&#x8FC7;&#x7F51;&#x5173;&#x5B9A;&#x4E49;&#x7684;&#x670D;&#x52A1;&#x3002;</td>
+<td>&#x662F;</td>
+</tr>
+<tr>
+<td>gateways</td>
+<td>string[]</td>
+<td>VirtualService &#x5BF9;&#x8C61;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x7F51;&#x683C;&#x4E2D;&#x7684; Sidecar&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A; Gateway&#x3002;&#x8FD9;&#x91CC;&#x516C;&#x5F00;&#x7684;&#x9009;&#x62E9;&#x6761;&#x4EF6;&#x53EF;&#x4EE5;&#x5728;&#x534F;&#x8BAE;&#x76F8;&#x5173;&#x7684;&#x8DEF;&#x7531;&#x8FC7;&#x6EE4;&#x6761;&#x4EF6;&#x4E2D;&#x8FDB;&#x884C;&#x8986;&#x76D6;&#x3002;&#x4FDD;&#x7559;&#x5B57; mesh &#x7528;&#x6765;&#x6307;&#x4EE3;&#x7F51;&#x683C;&#x4E2D;&#x7684;&#x6240;&#x6709; Sidecar&#x3002;&#x5F53;&#x8FD9;&#x4E00;&#x5B57;&#x6BB5;&#x88AB;&#x7701;&#x7565;&#x65F6;&#xFF0C;&#x5C31;&#x4F1A;&#x4F7F;&#x7528;&#x7F3A;&#x7701;&#x503C;&#xFF08;mesh&#xFF09;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x9488;&#x5BF9;&#x7F51;&#x683C;&#x4E2D;&#x7684;&#x6240;&#x6709; Sidecar &#x751F;&#x6548;&#x3002;&#x5982;&#x679C;&#x63D0;&#x4F9B;&#x4E86; gateways &#x5B57;&#x6BB5;&#xFF0C;&#x8FD9;&#x4E00;&#x89C4;&#x5219;&#x5C31;&#x53EA;&#x4F1A;&#x5E94;&#x7528;&#x5230;&#x58F0;&#x660E;&#x7684; Gateway &#x4E4B;&#x4E2D;&#x3002;&#x8981;&#x8BA9;&#x89C4;&#x5219;&#x540C;&#x65F6;&#x5BF9; Gateway &#x548C;&#x7F51;&#x683C;&#x5185;&#x670D;&#x52A1;&#x751F;&#x6548;&#xFF0C;&#x9700;&#x8981;&#x663E;&#x5F0F;&#x7684;&#x5C06; mesh &#x52A0;&#x5165; gateways &#x5217;&#x8868;&#x3002;</td>
+<td>&#x5426;</td>
+</tr>
+<tr>
+<td>http</td>
+<td>HTTPRoute[]</td>
+<td>HTTP &#x6D41;&#x91CF;&#x89C4;&#x5219;&#x7684;&#x6709;&#x5E8F;&#x5217;&#x8868;&#x3002;&#x8FD9;&#x4E2A;&#x5217;&#x8868;&#x5BF9;&#x540D;&#x79F0;&#x524D;&#x7F00;&#x4E3A; http-&#x3001;http2-&#x3001;grpc- &#x7684;&#x670D;&#x52A1;&#x7AEF;&#x53E3;&#xFF0C;&#x6216;&#x8005;&#x534F;&#x8BAE;&#x4E3A; HTTP&#x3001;HTTP2&#x3001;GRPC &#x4EE5;&#x53CA;&#x7EC8;&#x7ED3;&#x7684; TLS&#xFF0C;&#x53E6;&#x5916;&#x8FD8;&#x6709;&#x4F7F;&#x7528; HTTP&#x3001;HTTP2 &#x4EE5;&#x53CA; GRPC &#x534F;&#x8BAE;&#x7684; ServiceEntry &#x90FD;&#x662F;&#x6709;&#x6548;&#x7684;&#x3002;&#x8FDB;&#x5165;&#x6D41;&#x91CF;&#x4F1A;&#x4F7F;&#x7528;&#x5339;&#x914D;&#x5230;&#x7684;&#x7B2C;&#x4E00;&#x6761;&#x89C4;&#x5219;&#x3002;</td>
+<td>&#x5426;</td>
+</tr>
+<tr>
+<td>tls</td>
+<td>TLSRoute[]</td>
+<td>&#x4E00;&#x4E2A;&#x6709;&#x5E8F;&#x5217;&#x8868;&#xFF0C;&#x5BF9;&#x5E94;&#x7684;&#x662F;&#x900F;&#x4F20; TLS &#x548C; HTTPS &#x6D41;&#x91CF;&#x3002;&#x8DEF;&#x7531;&#x8FC7;&#x7A0B;&#x901A;&#x5E38;&#x5229;&#x7528; ClientHello &#x6D88;&#x606F;&#x4E2D;&#x7684; SNI &#x6765;&#x5B8C;&#x6210;&#x3002;TLS &#x8DEF;&#x7531;&#x901A;&#x5E38;&#x5E94;&#x7528;&#x5728; https-&#x3001;tls- &#x524D;&#x7F00;&#x7684;&#x5E73;&#x53F0;&#x670D;&#x52A1;&#x7AEF;&#x53E3;&#xFF0C;&#x6216;&#x8005;&#x7ECF; Gateway &#x900F;&#x4F20;&#x7684; HTTPS&#x3001;TLS &#x534F;&#x8BAE;&#x7AEF;&#x53E3;&#xFF0C;&#x4EE5;&#x53CA;&#x4F7F;&#x7528; HTTPS &#x6216;&#x8005; TLS &#x534F;&#x8BAE;&#x7684; ServiceEntry &#x7AEF;&#x53E3;&#x4E0A;&#x3002;&#x6CE8;&#x610F;&#xFF1A;&#x6CA1;&#x6709;&#x5173;&#x8054; VirtualService &#x7684; https- &#x6216;&#x8005; tls- &#x7AEF;&#x53E3;&#x6D41;&#x91CF;&#x4F1A;&#x88AB;&#x89C6;&#x4E3A;&#x900F;&#x4F20; TCP &#x6D41;&#x91CF;&#x3002;</td>
+<td>&#x5426;</td>
+</tr>
+<tr>
+<td>tcp</td>
+<td>TCPRoute[]</td>
+<td>&#x4E0D;&#x900F;&#x660E; TCP &#x6D41;&#x91CF;&#x7684;&#x8DEF;&#x7531;&#x89C4;&#x5219;&#x7684;&#x6709;&#x5E8F;&#x5217;&#x8868;&#x3002; TCP &#x8DEF;&#x7531;&#x5C06;&#x5E94;&#x7528;&#x4E8E;&#x975E; HTTP &#x6216; TLS &#x7AEF;&#x53E3;&#x7684;&#x4EFB;&#x4F55;&#x7AEF;&#x53E3;&#x3002;&#x4F7F;&#x7528;&#x5339;&#x914D;&#x4F20;&#x5165;&#x8BF7;&#x6C42;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x89C4;&#x5219;&#x3002;</td>
+<td>&#x5426;</td>
+</tr>
+<tr>
+<td>exportTo</td>
+<td>string[]</td>
+<td>&#x6B64;VirtualService&#x53EF;&#x89C1;&#x7684;namespace&#x5217;&#x8868;&#x3002;&#x5BFC;&#x51FA;VirtualService&#x5141;&#x8BB8;&#x5B83;&#x88AB;&#x5176;&#x4ED6;namespace&#x4E2D;&#x5B9A;&#x4E49;&#x7684;sidecar&#x548C;&#x7F51;&#x5173;&#x4F7F;&#x7528;&#x3002;&#x6B64;&#x529F;&#x80FD;&#x4E3A;&#x670D;&#x52A1;&#x6240;&#x6709;&#x8005;&#x548C;&#x7F51;&#x683C;&#x7BA1;&#x7406;&#x5458;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x673A;&#x5236;&#x6765;&#x63A7;&#x5236;&#x8DE8;namespace&#x8FB9;&#x754C;&#x7684;VirtualService&#x7684;&#x53EF;&#x89C1;&#x6027;&#x3002;&#x5982;&#x679C;&#x672A;&#x6307;&#x5B9A;namespace&#xFF0C;&#x5219;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x5C06;VirtualService&#x5BFC;&#x51FA;&#x5230;&#x6240;&#x6709;namespace&#x3002;&#x8BBE;&#x7F6E;&#x4E3A;.&#x8868;&#x793A;&#x5BFC;&#x51FA;&#x5230;&#x58F0;&#x660E;VirtualService&#x7684;&#x76F8;&#x540C;namespace&#x3002;&#x7C7B;&#x4F3C;&#x5730;&#xFF0C;&#x503C;&#x201C;<em>&#x201D;&#x88AB;&#x4FDD;&#x7559;&#x5E76;&#x5B9A;&#x4E49;&#x5230;&#x6240;&#x6709;namespace&#x7684;&#x5BFC;&#x51FA;&#x3002;&#x6CE8;&#x610F;&#xFF1A;&#x5728;&#x5F53;&#x524D;&#x7248;&#x672C;&#x4E2D;&#xFF0C;exportTo &#x503C;&#x88AB;&#x9650;&#x5236;&#x4E3A;&#x201C;.&#x201D;&#x3002;&#x6216;&#x201C;</em>&#x201D;&#xFF08;&#x5373;&#x5F53;&#x524D;namespace&#x6216;&#x6240;&#x6709;namespace&#xFF09;&#x3002;</td>
+<td>&#x5426;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="httproute"><a name="httproute" class="anchor-navigation-ex-anchor" href="#httproute"><i class="fa fa-link" aria-hidden="true"></i></a>HTTPRoute</h2>
+<p>&#x63CF;&#x8FF0;&#x8DEF;&#x7531; HTTP/1.1&#x3001;HTTP2 &#x548C; gRPC &#x6D41;&#x91CF;&#x7684;&#x5339;&#x914D;&#x6761;&#x4EF6;&#x548C;&#x64CD;&#x4F5C;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x5B57;&#x6BB5;&#x529F;&#x80FD;&#x63CF;&#x8FF0;</th>
+<th>&#x662F;&#x5426;&#x5FC5;&#x586B;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>&#x4E3A;&#x8C03;&#x8BD5;&#x76EE;&#x7684;&#x5206;&#x914D;&#x7ED9;&#x8DEF;&#x7531;&#x7684;&#x540D;&#x79F0;&#x3002;&#x8DEF;&#x7531;&#x7684;&#x540D;&#x79F0;&#x5C06;&#x4E0E;&#x5339;&#x914D;&#x7684;&#x540D;&#x79F0;&#x8FDE;&#x63A5;&#xFF0C;&#x5E76;&#x5C06;&#x8BB0;&#x5F55;&#x5728;&#x4E0E;&#x6B64;&#x8DEF;&#x7531;/&#x5339;&#x914D;&#x5339;&#x914D;&#x7684;&#x8BF7;&#x6C42;&#x7684;&#x8BBF;&#x95EE;&#x65E5;&#x5FD7;&#x4E2D;&#x3002;</td>
+<td>&#x5426;</td>
+</tr>
+<tr>
+<td>match</td>
+<td>HTTPMatchRequest[]</td>
+<td>&#x5339;&#x914D;&#x89C4;&#x5219;&#x8981;&#x6EE1;&#x8DB3;&#x7684;&#x5339;&#x914D;&#x6761;&#x4EF6;&#x3002;&#x5355;&#x4E2A;&#x5339;&#x914D;&#x5757;&#x5185;&#x7684;&#x6240;&#x6709;&#x6761;&#x4EF6;&#x90FD;&#x5177;&#x6709; AND &#x8BED;&#x4E49;&#xFF0C;&#x800C;&#x5339;&#x914D;&#x5757;&#x5217;&#x8868;&#x5177;&#x6709; OR &#x8BED;&#x4E49;&#x3002;</td>
+<td>&#x5426;</td>
+</tr>
+<tr>
+<td>route</td>
+<td>HTTPRouteDestination[]</td>
+<td>http &#x89C4;&#x5219;&#x53EF;&#x4EE5;&#x91CD;&#x5B9A;&#x5411;&#x6216;&#x8F6C;&#x53D1;&#xFF08;&#x9ED8;&#x8BA4;&#xFF09;&#x6D41;&#x91CF;&#x3002;&#x8F6C;&#x53D1;&#x76EE;&#x6807;&#x53EF;&#x4EE5;&#x662F;&#x670D;&#x52A1;&#x7684;&#x591A;&#x4E2A;&#x7248;&#x672C;&#x4E4B;&#x4E00;&#x3002;&#x4E0E;&#x670D;&#x52A1;&#x7248;&#x672C;&#x76F8;&#x5173;&#x7684;&#x6743;&#x91CD;&#x51B3;&#x5B9A;&#x4E86;&#x5B83;&#x63A5;&#x6536;&#x7684;&#x6D41;&#x91CF;&#x6BD4;&#x4F8B;&#x3002;</td>
+<td>&#x5426;</td>
+</tr>
+<tr>
+<td>redirect</td>
+<td>HTTPRedirect</td>
+<td>http &#x89C4;&#x5219;&#x53EF;&#x4EE5;&#x91CD;&#x5B9A;&#x5411;&#x6216;&#x8F6C;&#x53D1;&#xFF08;&#x9ED8;&#x8BA4;&#xFF09;&#x6D41;&#x91CF;&#x3002;&#x5982;&#x679C;&#x89C4;&#x5219;&#x4E2D;&#x6307;&#x5B9A;&#x4E86;&#x6D41;&#x91CF;&#x900F;&#x4F20;&#x9009;&#x9879;&#xFF0C;&#x8DEF;&#x7531;/&#x91CD;&#x5B9A;&#x5411;&#x5C06;&#x88AB;&#x5FFD;&#x7565;&#x3002;&#x91CD;&#x5B9A;&#x5411;&#x539F;&#x8BED;&#x53EF;&#x7528;&#x4E8E;&#x5C06; HTTP 301 &#x91CD;&#x5B9A;&#x5411;&#x53D1;&#x9001;&#x5230;&#x4E0D;&#x540C;&#x7684; URI &#x6216;&#x6743;&#x9650;&#x3002;</td>
+<td>&#x5426;</td>
+</tr>
+<tr>
+<td>rewrite</td>
+<td>HTTPRewrite</td>
+<td>&#x91CD;&#x5199; HTTP URI &#x548C;&#x6743;&#x9650;&#x6807;&#x5934;&#x3002; Rewrite &#x4E0D;&#x80FD;&#x4E0E; Redirect &#x539F;&#x8BED;&#x4E00;&#x8D77;&#x4F7F;&#x7528;&#x3002;&#x5728;&#x8F6C;&#x53D1;&#x4E4B;&#x524D;&#x5C06;&#x6267;&#x884C;&#x91CD;&#x5199;&#x3002;</td>
+<td>&#x5426;</td>
+</tr>
+<tr>
+<td>timeout</td>
+<td>Duration</td>
+<td>HTTP&#x8BF7;&#x6C42;&#x7684;&#x8D85;&#x65F6;&#x65F6;&#x95F4;&#x3002;</td>
+<td>&#x5426;</td>
+</tr>
+<tr>
+<td>retries</td>
+<td>HTTPRetry</td>
+<td>HTTP&#x8BF7;&#x6C42;&#x7684;&#x91CD;&#x8BD5;&#x7B56;&#x7565;&#x3002;</td>
+<td>&#x5426;</td>
+</tr>
+<tr>
+<td>fault</td>
+<td>HTTPFaultInjection</td>
+<td>&#x5E94;&#x7528;&#x4E8E;&#x5BA2;&#x6237;&#x7AEF; HTTP &#x6D41;&#x91CF;&#x7684;&#x6545;&#x969C;&#x6CE8;&#x5165;&#x7B56;&#x7565;&#x3002;&#x8BF7;&#x6CE8;&#x610F;&#xFF0C;&#x5728;&#x5BA2;&#x6237;&#x7AEF;&#x542F;&#x7528;&#x6545;&#x969C;&#x65F6;&#xFF0C;&#x5C06;&#x4E0D;&#x4F1A;&#x542F;&#x7528;&#x8D85;&#x65F6;&#x6216;&#x91CD;&#x8BD5;&#x3002;</td>
+<td>&#x5426;</td>
+</tr>
+<tr>
+<td>mirror</td>
+<td>Destination</td>
+<td>&#x9664;&#x4E86;&#x5C06;&#x8BF7;&#x6C42;&#x8F6C;&#x53D1;&#x5230;&#x9884;&#x671F;&#x76EE;&#x7684;&#x5730;&#x4E4B;&#x5916;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x5C06; HTTP &#x6D41;&#x91CF;&#x955C;&#x50CF;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x76EE;&#x7684;&#x5730;&#x3002;&#x955C;&#x50CF;&#x6D41;&#x91CF;&#x53EA;&#x662F;&#x4F1A;&#x5C3D;&#x91CF;&#x4FDD;&#x8BC1;&#x955C;&#x50CF;&#x6D41;&#x91CF;&#x53D1;&#x9001;&#xFF0C;&#x4E0D;&#x4F1A;&#x7B49;&#x5F85;&#x955C;&#x50CF;&#x96C6;&#x7FA4;&#x7684;&#x54CD;&#x5E94;&#x4FE1;&#x606F;&#x3002;</td>
+<td>&#x5426;</td>
+</tr>
+<tr>
+<td>mirrorPercent</td>
+<td>uint 32</td>
+<td>&#x955C;&#x50CF;&#x5B57;&#x6BB5;&#x8981;&#x955C;&#x50CF;&#x7684;&#x6D41;&#x91CF;&#x7684;&#x767E;&#x5206;&#x6BD4;&#x3002;&#x5982;&#x679C;&#x6B64;&#x5B57;&#x6BB5;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x5219;&#x6240;&#x6709;&#x6D41;&#x91CF; (100%) &#x90FD;&#x5C06;&#x88AB;&#x955C;&#x50CF;&#x3002;&#x6700;&#x5927;&#x503C;&#x4E3A; 100&#x3002;</td>
+<td>&#x5426;</td>
+</tr>
+<tr>
+<td>corsPolicy</td>
+<td>CorsPolicy</td>
+<td>&#x8DE8;&#x6E90;&#x8D44;&#x6E90;&#x5171;&#x4EAB;&#x7B56;&#x7565; (CORS)&#x3002;</td>
+<td>&#x5426;</td>
+</tr>
+<tr>
+<td>headers</td>
+<td>Headers</td>
+<td>headers&#x7684;&#x5904;&#x7406;&#x89C4;&#x5219;&#x3002;</td>
+<td>&#x5426;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="httpmatchrequest"><a name="httpmatchrequest" class="anchor-navigation-ex-anchor" href="#httpmatchrequest"><i class="fa fa-link" aria-hidden="true"></i></a>HTTPMatchRequest</h2>
+<p>HttpMatchRequest &#x6307;&#x5B9A;&#x4E00;&#x7EC4;&#x8981;&#x6EE1;&#x8DB3;&#x7684;&#x6807;&#x51C6;&#xFF0C;&#x4EE5;&#x4FBF;&#x5C06;&#x89C4;&#x5219;&#x5E94;&#x7528;&#x4E8E; HTTP &#x8BF7;&#x6C42;&#x3002;
+&#x4F8B;&#x5982;&#xFF0C;&#x4EE5;&#x4E0B;&#x89C4;&#x5219;&#x5C06;&#x89C4;&#x5219;&#x9650;&#x5236;&#x4E3A;&#x4EC5;&#x5339;&#x914D; URL &#x8DEF;&#x5F84;&#x4EE5; <code>/ratings/v2/</code> &#x5F00;&#x5934;&#x4E14;&#x8BF7;&#x6C42;&#x5934;&#x4E2D;&#x5305;&#x542B; <code>end-user</code> &#x5B57;&#x6BB5;&#x7684;&#x503C;&#x4E3A; <code>jason</code> &#x7684;&#x8BF7;&#x6C42;&#x3002;</p>
+<pre class="language-"><code class="lang-yaml"><span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> networking.istio.io/v1alpha3
+<span class="token key atrule">kind</span><span class="token punctuation">:</span> VirtualService
+<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> ratings<span class="token punctuation">-</span>route
+<span class="token key atrule">spec</span><span class="token punctuation">:</span>
+  <span class="token key atrule">hosts</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> ratings.prod.svc.cluster.local
+  <span class="token key atrule">http</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">match</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">headers</span><span class="token punctuation">:</span>
+        <span class="token key atrule">end-user</span><span class="token punctuation">:</span>
+          <span class="token key atrule">exact</span><span class="token punctuation">:</span> jason
+      <span class="token key atrule">uri</span><span class="token punctuation">:</span>
+        <span class="token key atrule">prefix</span><span class="token punctuation">:</span> <span class="token string">&quot;/ratings/v2/&quot;</span>
+      <span class="token key atrule">ignoreUriCase</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">route</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">destination</span><span class="token punctuation">:</span>
+        <span class="token key atrule">host</span><span class="token punctuation">:</span> ratings.prod.svc.cluster.local
+</code></pre>
+<p><strong>HTTPMatchRequest &#x5B57;&#x6BB5;&#x4E0D;&#x5141;&#x8BB8;&#x4E3A;&#x7A7A;&#x3002;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x5B57;&#x6BB5;&#x529F;&#x80FD;&#x63CF;&#x8FF0;</th>
+<th>&#x662F;&#x5426;&#x5FC5;&#x586B;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>&#x5206;&#x914D;&#x7ED9;&#x5339;&#x914D;&#x9879;&#x7684;&#x540D;&#x79F0;&#x3002;&#x5339;&#x914D;&#x7684;&#x540D;&#x79F0;&#x5C06;&#x4E0E;&#x7236;&#x8DEF;&#x7531;&#x7684;&#x540D;&#x79F0;&#x8FDE;&#x63A5;&#xFF0C;&#x5E76;&#x5C06;&#x8BB0;&#x5F55;&#x5728;&#x4E0E;&#x6B64;&#x8DEF;&#x7531;&#x5339;&#x914D;&#x7684;&#x8BF7;&#x6C42;&#x7684;&#x8BBF;&#x95EE;&#x65E5;&#x5FD7;&#x4E2D;&#x3002;</td>
+<td>&#x5426;</td>
+</tr>
+<tr>
+<td>uri</td>
+<td>StringMatch</td>
+<td>&#x5339;&#x914D;&#x503C;&#x7684; URI &#x9ED8;&#x8BA4;&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;&#xFF0C;&#x683C;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;exact &#x8868;&#x793A;&#x7CBE;&#x786E;&#x5339;&#x914D;&#xFF0C;prefix &#x8868;&#x793A;&#x524D;&#x7F00;&#x5339;&#x914D;&#xFF0C;regex &#x8868;&#x793A;&#x6B63;&#x5219;&#x5339;&#x914D;&#x3002;&#x6CE8;&#x610F;&#xFF1A;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; ignore_uri_case &#x6807;&#x5FD7;&#x542F;&#x7528;&#x4E0D;&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;&#x7684;&#x5339;&#x914D;&#x3002;</td>
+<td>&#x5426;</td>
+</tr>
+<tr>
+<td>scheme</td>
+<td>StringMatch</td>
+<td>URI Scheme &#x503C;&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;&#x3002;</td>
+<td>&#x5426;</td>
+</tr>
+<tr>
+<td>method</td>
+<td>StringMatch</td>
+<td>HTTP &#x65B9;&#x6CD5;&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;&#x3002;</td>
+<td>&#x5426;</td>
+</tr>
+<tr>
+<td>authority</td>
+<td>StringMatch</td>
+<td>HTTP &#x6743;&#x9650;&#x503C;&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;&#x3002;</td>
+<td>&#x5426;</td>
+</tr>
+<tr>
+<td>headers</td>
+<td>map<string,stringmatch></string,stringmatch></td>
+<td>header&#x4E2D;&#x7684;key&#x5FC5;&#x987B;&#x662F;&#x5C0F;&#x5199;&#x4E14;&#x4F7F;&#x7528;<code>-</code>&#x6765;&#x5206;&#x9694;&#xFF0C;&#x4F8B;&#x5982; <code>x-request-id</code>&#x3002;</td>
+<td>&#x5426;</td>
+</tr>
+<tr>
+<td>port</td>
+<td>uint32</td>
+<td>&#x6307;&#x5B9A;&#x8981;&#x5BFB;&#x5740;&#x7684;&#x4E3B;&#x673A;&#x4E0A;&#x7684;&#x7AEF;&#x53E3;&#x3002;&#x8BB8;&#x591A;&#x670D;&#x52A1;&#x4EC5;&#x516C;&#x5F00;&#x5355;&#x4E2A;&#x7AEF;&#x53E3;&#x6216;&#x5E26;&#x6709;&#x5B83;&#x4EEC;&#x652F;&#x6301;&#x7684;&#x534F;&#x8BAE;&#x7684;&#x6807;&#x7B7E;&#x7AEF;&#x53E3;&#xFF0C;&#x5728;&#x8FD9;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x660E;&#x786E;&#x9009;&#x62E9;&#x7AEF;&#x53E3;&#x3002;</td>
+<td>&#x5426;</td>
+</tr>
+<tr>
+<td>sourceLabels</td>
+<td>map<string,stirng></string,stirng></td>
+<td>&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x6807;&#x7B7E;&#xFF0C;&#x7528;&#x4E8E;&#x9650;&#x5236;&#x89C4;&#x5219;&#x5BF9;&#x5177;&#x6709;&#x7ED9;&#x5B9A;&#x6807;&#x7B7E;&#x7684;&#x5DE5;&#x4F5C;&#x8D1F;&#x8F7D;&#x7684;&#x573A;&#x666F;&#x3002;&#x5982;&#x679C; VirtualService &#x8BBE;&#x7F6E;&#x4E86; gateways&#xFF0C;&#x5219;&#x5B83;&#x5FC5;&#x987B;&#x5305;&#x542B;mesh&#x4EE5;&#x4F7F;&#x8BE5;&#x5B57;&#x6BB5;&#x9002;&#x7528;&#x3002;</td>
+<td>&#x5426;</td>
+</tr>
+<tr>
+<td>queryParams</td>
+<td>map<string,stringmatch></string,stringmatch></td>
+<td>&#x5BF9;query&#x8BF7;&#x6C42;&#x7684;&#x53C2;&#x6570;&#x8FDB;&#x884C;&#x5339;&#x914D;&#x3002;</td>
+<td>&#x5426;</td>
+</tr>
+<tr>
+<td>ignoreUriCase</td>
+<td>bool</td>
+<td>&#x6307;&#x5B9A;uri&#x5339;&#x914D;&#x4E2D;&#x662F;&#x5426;&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;&#x5426;&#x3002;</td>
+<td>&#x5426;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="httproutedestination"><a name="httproutedestination" class="anchor-navigation-ex-anchor" href="#httproutedestination"><i class="fa fa-link" aria-hidden="true"></i></a>HTTPRouteDestination</h2>
+<p>&#x6BCF;&#x4E2A;&#x8DEF;&#x7531;&#x89C4;&#x5219;&#x90FD;&#x4E0E;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x670D;&#x52A1;&#x7248;&#x672C;&#x76F8;&#x5173;&#x8054;&#x3002;&#x4E0E;&#x7248;&#x672C;&#x76F8;&#x5173;&#x7684;&#x6743;&#x91CD;&#x51B3;&#x5B9A;&#x4E86;&#x5B83;&#x63A5;&#x6536;&#x7684;&#x6D41;&#x91CF;&#x6BD4;&#x4F8B;&#x3002;
+&#x4F8B;&#x5982;&#xFF0C;&#x4EE5;&#x4E0B;&#x89C4;&#x5219;&#x5C06;&#x201C;&#x8BC4;&#x8BBA;&#x201D;&#x670D;&#x52A1;&#x7684; 25% &#x6D41;&#x91CF;&#x8DEF;&#x7531;&#x5230;&#x5E26;&#x6709;&#x201C;v2&#x201D;&#x6807;&#x7B7E;&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x5176;&#x4F59;&#x6D41;&#x91CF;&#xFF08;&#x5373; 75%&#xFF09;&#x8DEF;&#x7531;&#x5230;&#x201C;v1&#x201D;&#x3002;</p>
+<pre class="language-"><code class="lang-yaml"><span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> networking.istio.io/v1alpha3
+<span class="token key atrule">kind</span><span class="token punctuation">:</span> VirtualService
+<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> reviews<span class="token punctuation">-</span>route
+<span class="token key atrule">spec</span><span class="token punctuation">:</span>
+  <span class="token key atrule">hosts</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> reviews.prod.svc.cluster.local
+  <span class="token key atrule">http</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">route</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">destination</span><span class="token punctuation">:</span>
+        <span class="token key atrule">host</span><span class="token punctuation">:</span> reviews.prod.svc.cluster.local
+        <span class="token key atrule">subset</span><span class="token punctuation">:</span> v2
+      <span class="token key atrule">weight</span><span class="token punctuation">:</span> <span class="token number">25</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">destination</span><span class="token punctuation">:</span>
+        <span class="token key atrule">host</span><span class="token punctuation">:</span> reviews.prod.svc.cluster.local
+        <span class="token key atrule">subset</span><span class="token punctuation">:</span> v1
+      <span class="token key atrule">weight</span><span class="token punctuation">:</span> <span class="token number">75</span>
+</code></pre>
+<p>&#x6B64;&#x5916;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5C06;&#x6D41;&#x91CF;&#x5206;&#x4E3A;&#x4E24;&#x4E2A;&#x5B8C;&#x5168;&#x4E0D;&#x540C;&#x7684;&#x670D;&#x52A1;&#xFF0C;&#x800C;&#x65E0;&#x9700;&#x5B9A;&#x4E49;&#x65B0;&#x7684;&#x5B50;&#x96C6;&#x3002;
+&#x4F8B;&#x5982;&#xFF0C;&#x4EE5;&#x4E0B;&#x89C4;&#x5219;&#x5C06; 25% &#x7684;&#x6D41;&#x91CF;&#x8F6C;&#x53D1;&#x5230; review.com &#x5230; dev.reviews.com &#x3002;</p>
+<pre class="language-"><code class="lang-yaml"><span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> networking.istio.io/v1alpha3
+<span class="token key atrule">kind</span><span class="token punctuation">:</span> VirtualService
+<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> reviews<span class="token punctuation">-</span>route<span class="token punctuation">-</span>two<span class="token punctuation">-</span>domains
+<span class="token key atrule">spec</span><span class="token punctuation">:</span>
+  <span class="token key atrule">hosts</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> reviews.com
+  <span class="token key atrule">http</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">route</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">destination</span><span class="token punctuation">:</span>
+        <span class="token key atrule">host</span><span class="token punctuation">:</span> dev.reviews.com
+      <span class="token key atrule">weight</span><span class="token punctuation">:</span> <span class="token number">25</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">destination</span><span class="token punctuation">:</span>
+        <span class="token key atrule">host</span><span class="token punctuation">:</span> reviews.com
+      <span class="token key atrule">weight</span><span class="token punctuation">:</span> <span class="token number">75</span>
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x5B57;&#x6BB5;&#x529F;&#x80FD;&#x63CF;&#x8FF0;</th>
+<th>&#x662F;&#x5426;&#x5FC5;&#x586B;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>destination</td>
+<td>Destination</td>
+<td>Destination &#x552F;&#x4E00;&#x6807;&#x8BC6;&#x4E86;&#x8BF7;&#x6C42;/&#x8FDE;&#x63A5;&#x5E94;&#x8BE5;&#x8F6C;&#x53D1;&#x5230;&#x7684;&#x670D;&#x52A1;&#x5B9E;&#x4F8B;&#x3002;</td>
+<td>&#x662F;</td>
+</tr>
+<tr>
+<td>weight</td>
+<td>int32</td>
+<td>&#x8981;&#x8F6C;&#x53D1;&#x5230;&#x670D;&#x52A1;&#x7248;&#x672C;&#x7684;&#x6D41;&#x91CF;&#x6BD4;&#x4F8B;(0-100)&#x3002;&#x8DE8;&#x76EE;&#x7684;&#x5730;&#x7684;&#x6743;&#x91CD;&#x603B;&#x548C;&#x5E94;&#x8BE5; == 100&#x3002;&#x5982;&#x679C;&#x89C4;&#x5219;&#x4E2D;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x76EE;&#x7684;&#x5730;&#xFF0C;&#x5219;&#x5047;&#x5B9A;&#x6743;&#x91CD;&#x503C;&#x4E3A;100&#x3002;</td>
+<td>&#x5426;</td>
+</tr>
+<tr>
+<td>headers</td>
+<td>Headers</td>
+<td>&#x8BBE;&#x7F6E;Header&#x7684;&#x64CD;&#x4F5C;&#x89C4;&#x5219;&#x3002;</td>
+<td>&#x5426;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="destination"><a name="destination" class="anchor-navigation-ex-anchor" href="#destination"><i class="fa fa-link" aria-hidden="true"></i></a>Destination</h2>
+<p>Destination &#x8868;&#x793A;&#x5904;&#x7406;&#x8DEF;&#x7531;&#x89C4;&#x5219;&#x540E;&#x8BF7;&#x6C42;/&#x8FDE;&#x63A5;&#x5C06;&#x53D1;&#x9001;&#x5230;&#x7684;&#x7F51;&#x7EDC;&#x53EF;&#x5BFB;&#x5740;&#x670D;&#x52A1;&#x3002;
+destination.host &#x5E94;&#x8BE5;&#x660E;&#x786E;&#x5F15;&#x7528;&#x670D;&#x52A1;&#x6CE8;&#x518C;&#x8868;&#x4E2D;&#x7684;&#x670D;&#x52A1;&#x3002;
+Istio &#x7684;&#x670D;&#x52A1;&#x6CE8;&#x518C;&#x8868;&#x7531;&#x5E73;&#x53F0;&#x670D;&#x52A1;&#x6CE8;&#x518C;&#x8868;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x670D;&#x52A1;&#xFF08;&#x4F8B;&#x5982; Kubernetes &#x670D;&#x52A1;&#x3001;Consul &#x670D;&#x52A1;&#xFF09;&#x4EE5;&#x53CA;&#x901A;&#x8FC7; ServiceEntry &#x8D44;&#x6E90;&#x58F0;&#x660E;&#x7684;&#x670D;&#x52A1;&#x7EC4;&#x6210;&#x3002;</p>
+<p>Kubernetes &#x7528;&#x6237;&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#xFF1A;&#x5F53;&#x4F7F;&#x7528;&#x77ED;&#x540D;&#x79F0;&#x65F6;&#xFF08;&#x4F8B;&#x5982;&#x201C;reviews&#x201D;&#x800C;&#x4E0D;&#x662F;&#x201C;reviews.default.svc.cluster.local&#x201D;&#xFF09;&#xFF0C;
+Istio &#x5C06;&#x6839;&#x636E;&#x89C4;&#x5219;&#x7684;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#x800C;&#x4E0D;&#x662F;&#x670D;&#x52A1;&#x6765;&#x89E3;&#x91CA;&#x77ED;&#x540D;&#x79F0;&#x3002;
+&#x4E3A;&#x907F;&#x514D;&#x6F5C;&#x5728;&#x7684;&#x9519;&#x8BEF;&#x914D;&#x7F6E;&#xFF0C;&#x5EFA;&#x8BAE;&#x59CB;&#x7EC8;&#x4F7F;&#x7528;&#x5B8C;&#x5168;&#x9650;&#x5B9A;&#x57DF;&#x540D;&#x800C;&#x4E0D;&#x662F;&#x77ED;&#x540D;&#x79F0;&#x3002;</p>
+<p>&#x4EE5;&#x4E0B; Kubernetes &#x793A;&#x4F8B;&#x9ED8;&#x8BA4;&#x5C06;&#x6240;&#x6709;&#x6D41;&#x91CF;&#x8DEF;&#x7531;&#x5230; Kubernetes &#x73AF;&#x5883;&#x4E2D;&#x5E26;&#x6709;&#x6807;&#x7B7E;&#x201C;version: v1&#x201D;&#xFF08;&#x5373;&#x5B50;&#x96C6; v1&#xFF09;&#x7684;&#x8BC4;&#x8BBA;&#x670D;&#x52A1;&#x7684; Pod&#xFF0C;&#x4EE5;&#x53CA;&#x4E00;&#x4E9B;&#x5230;&#x5B50;&#x96C6; v2 &#x7684;&#x6D41;&#x91CF;&#x3002;</p>
+<pre class="language-"><code class="lang-yaml"><span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> networking.istio.io/v1alpha3
+<span class="token key atrule">kind</span><span class="token punctuation">:</span> VirtualService
+<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> reviews<span class="token punctuation">-</span>route
+  <span class="token key atrule">namespace</span><span class="token punctuation">:</span> foo
+<span class="token key atrule">spec</span><span class="token punctuation">:</span>
+  <span class="token key atrule">hosts</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> reviews <span class="token comment"># interpreted as reviews.foo.svc.cluster.local</span>
+  <span class="token key atrule">http</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">match</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">uri</span><span class="token punctuation">:</span>
+        <span class="token key atrule">prefix</span><span class="token punctuation">:</span> <span class="token string">&quot;/wpcatalog&quot;</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">uri</span><span class="token punctuation">:</span>
+        <span class="token key atrule">prefix</span><span class="token punctuation">:</span> <span class="token string">&quot;/consumercatalog&quot;</span>
+    <span class="token key atrule">rewrite</span><span class="token punctuation">:</span>
+      <span class="token key atrule">uri</span><span class="token punctuation">:</span> <span class="token string">&quot;/newcatalog&quot;</span>
+    <span class="token key atrule">route</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">destination</span><span class="token punctuation">:</span>
+        <span class="token key atrule">host</span><span class="token punctuation">:</span> reviews <span class="token comment"># interpreted as reviews.foo.svc.cluster.local</span>
+        <span class="token key atrule">subset</span><span class="token punctuation">:</span> v2
+  <span class="token punctuation">-</span> <span class="token key atrule">route</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">destination</span><span class="token punctuation">:</span>
+        <span class="token key atrule">host</span><span class="token punctuation">:</span> reviews <span class="token comment"># interpreted as reviews.foo.svc.cluster.local</span>
+        <span class="token key atrule">subset</span><span class="token punctuation">:</span> v1
+</code></pre>
+<p>&#x5B83;&#x5BF9;&#x5E94;&#x7684; DestinationRule &#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-yaml"><span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> networking.istio.io/v1alpha3
+<span class="token key atrule">kind</span><span class="token punctuation">:</span> DestinationRule
+<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> reviews<span class="token punctuation">-</span>destination
+  <span class="token key atrule">namespace</span><span class="token punctuation">:</span> foo
+<span class="token key atrule">spec</span><span class="token punctuation">:</span>
+  <span class="token key atrule">host</span><span class="token punctuation">:</span> reviews <span class="token comment"># interpreted as reviews.foo.svc.cluster.local</span>
+  <span class="token key atrule">subsets</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> v1
+    <span class="token key atrule">labels</span><span class="token punctuation">:</span>
+      <span class="token key atrule">version</span><span class="token punctuation">:</span> v1
+  <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> v2
+    <span class="token key atrule">labels</span><span class="token punctuation">:</span>
+      <span class="token key atrule">version</span><span class="token punctuation">:</span> v2
+</code></pre>
+<p>&#x4EE5;&#x4E0B; VirtualService &#x4E3A; Kubernetes &#x4E2D;&#x5BF9; productpage.prod.svc.cluster.local &#x670D;&#x52A1;&#x7684;&#x6240;&#x6709;&#x8C03;&#x7528;&#x8BBE;&#x7F6E;&#x4E86; 5 &#x79D2;&#x7684;&#x8D85;&#x65F6;&#x3002;
+&#x8BF7;&#x6CE8;&#x610F;&#xFF0C;&#x6B64;&#x89C4;&#x5219;&#x4E2D;&#x6CA1;&#x6709;&#x5B9A;&#x4E49;&#x5B50;&#x96C6;&#x3002;
+Istio &#x5C06;&#x4ECE;&#x670D;&#x52A1;&#x6CE8;&#x518C;&#x8868;&#x4E2D;&#x83B7;&#x53D6; productpage.prod.svc.cluster.local &#x670D;&#x52A1;&#x7684;&#x6240;&#x6709;&#x5B9E;&#x4F8B;&#x3002;
+&#x53E6;&#x5916;&#x9700;&#x8981;&#x6CE8;&#x610F;&#xFF0C;&#x6B64;&#x89C4;&#x5219;&#x8BBE;&#x7F6E;&#x5728; istio-system &#x547D;&#x540D;&#x7A7A;&#x95F4;&#x4E2D;&#xFF0C;&#x4F46;&#x4F7F;&#x7528; productpage &#x670D;&#x52A1;&#x7684;&#x5B8C;&#x5168;&#x9650;&#x5B9A;&#x57DF;&#x540D; productpage.prod.svc.cluster.local&#x3002;
+&#x56E0;&#x6B64;&#xFF0C;&#x89C4;&#x5219;&#x7684;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#x5BF9;&#x89E3;&#x6790; productpage &#x670D;&#x52A1;&#x7684;&#x540D;&#x79F0;&#x6CA1;&#x6709;&#x5F71;&#x54CD;&#x3002;</p>
+<pre class="language-"><code class="lang-yaml"><span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> networking.istio.io/v1alpha3
+<span class="token key atrule">kind</span><span class="token punctuation">:</span> VirtualService
+<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> my<span class="token punctuation">-</span>productpage<span class="token punctuation">-</span>rule
+  <span class="token key atrule">namespace</span><span class="token punctuation">:</span> istio<span class="token punctuation">-</span>system
+<span class="token key atrule">spec</span><span class="token punctuation">:</span>
+  <span class="token key atrule">hosts</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> productpage.prod.svc.cluster.local <span class="token comment"># ignores rule namespace</span>
+  <span class="token key atrule">http</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">timeout</span><span class="token punctuation">:</span> 5s
+    <span class="token key atrule">route</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">destination</span><span class="token punctuation">:</span>
+        <span class="token key atrule">host</span><span class="token punctuation">:</span> productpage.prod.svc.cluster.local
+</code></pre>
+<p>&#x4E3A;&#x4E86;&#x63A7;&#x5236;&#x7ED1;&#x5B9A;&#x5230;&#x7F51;&#x683C;&#x5916;&#x90E8;&#x670D;&#x52A1;&#x7684;&#x6D41;&#x91CF;&#x7684;&#x8DEF;&#x7531;&#xFF0C;&#x5FC5;&#x987B;&#x9996;&#x5148;&#x4F7F;&#x7528; ServiceEntry &#x8D44;&#x6E90;&#x5C06;&#x5916;&#x90E8;&#x670D;&#x52A1;&#x6DFB;&#x52A0;&#x5230; Istio &#x7684;&#x5185;&#x90E8;&#x670D;&#x52A1;&#x6CE8;&#x518C;&#x8868;&#x3002;
+&#x7136;&#x540E;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49; VirtualServices &#x6765;&#x63A7;&#x5236;&#x7ED1;&#x5B9A;&#x5230;&#x8FD9;&#x4E9B;&#x5916;&#x90E8;&#x670D;&#x52A1;&#x7684;&#x6D41;&#x91CF;&#x3002;
+&#x4F8B;&#x5982;&#xFF0C;&#x4EE5;&#x4E0B;&#x89C4;&#x5219;&#x4E3A; wikipedia.org &#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x670D;&#x52A1;&#xFF0C;&#x5E76;&#x4E3A; http &#x8BF7;&#x6C42;&#x8BBE;&#x7F6E;&#x4E86; 5 &#x79D2;&#x7684;&#x8D85;&#x65F6;&#x65F6;&#x95F4;&#x3002;</p>
+<pre class="language-"><code class="lang-yaml"><span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> networking.istio.io/v1alpha3
+<span class="token key atrule">kind</span><span class="token punctuation">:</span> ServiceEntry
+<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> external<span class="token punctuation">-</span>svc<span class="token punctuation">-</span>wikipedia
+<span class="token key atrule">spec</span><span class="token punctuation">:</span>
+  <span class="token key atrule">hosts</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> wikipedia.org
+  <span class="token key atrule">location</span><span class="token punctuation">:</span> MESH_EXTERNAL
+  <span class="token key atrule">ports</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">number</span><span class="token punctuation">:</span> <span class="token number">80</span>
+    <span class="token key atrule">name</span><span class="token punctuation">:</span> example<span class="token punctuation">-</span>http
+    <span class="token key atrule">protocol</span><span class="token punctuation">:</span> HTTP
+  <span class="token key atrule">resolution</span><span class="token punctuation">:</span> DNS
+<span class="token punctuation">---</span>
+<span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> networking.istio.io/v1alpha3
+<span class="token key atrule">kind</span><span class="token punctuation">:</span> VirtualService
+<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> my<span class="token punctuation">-</span>wiki<span class="token punctuation">-</span>rule
+<span class="token key atrule">spec</span><span class="token punctuation">:</span>
+  <span class="token key atrule">hosts</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> wikipedia.org
+  <span class="token key atrule">http</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">timeout</span><span class="token punctuation">:</span> 5s
+    <span class="token key atrule">route</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">destination</span><span class="token punctuation">:</span>
+        <span class="token key atrule">host</span><span class="token punctuation">:</span> wikipedia.org
+</code></pre>
+<p>Ps: ServiceEntry &#x53EF;&#x4EE5;&#x5C06;&#x5916;&#x90E8;&#x670D;&#x52A1;&#x7684;&#x8BBF;&#x95EE;&#x5730;&#x5740;&#x6216;&#x57DF;&#x540D;&#x5F15;&#x5165;Istio&#x4E2D;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x5B57;&#x6BB5;&#x529F;&#x80FD;&#x63CF;&#x8FF0;</th>
+<th>&#x662F;&#x5426;&#x5FC5;&#x586B;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>host</td>
+<td>string</td>
+<td>&#x6765;&#x81EA;&#x670D;&#x52A1;&#x6CE8;&#x518C;&#x4E2D;&#x5FC3;&#x7684;&#x670D;&#x52A1;&#x540D;&#x79F0;&#x3002;&#x670D;&#x52A1;&#x540D;&#x79F0;&#x662F;&#x4ECE;&#x5E73;&#x53F0;&#x7684;&#x670D;&#x52A1;&#x6CE8;&#x518C;&#x8868;&#xFF08;&#x4F8B;&#x5982; Kubernetes &#x670D;&#x52A1;&#x3001;Consul &#x670D;&#x52A1;&#x7B49;&#xFF09;&#x548C; ServiceEntry &#x58F0;&#x660E;&#x7684;&#x4E3B;&#x673A;&#x4E2D;&#x67E5;&#x627E;&#x7684;&#x3002;&#x5982;&#x679C;&#x914D;&#x7F6E;&#x7684;host&#x5728;&#x5E73;&#x53F0;&#x670D;&#x52A1;&#x6CE8;&#x518C;&#x8868;&#x548C;ServiceEntry&#x4E2D;&#x90FD;&#x6CA1;&#x6709;&#xFF0C;&#x5219;&#x6D41;&#x91CF;&#x4F1A;&#x88AB;&#x4E22;&#x5F03;&#x3002;</td>
+<td>&#x662F;</td>
+</tr>
+<tr>
+<td>subset</td>
+<td>string</td>
+<td>&#x670D;&#x52A1;&#x4E2D;&#x5B50;&#x96C6;&#x7684;&#x540D;&#x79F0;&#x3002;&#x4EC5;&#x9002;&#x7528;&#x4E8E;&#x7F51;&#x683C;&#x5185;&#x7684;&#x670D;&#x52A1;&#x3002;&#x8BE5;&#x5B50;&#x96C6;&#x5FC5;&#x987B;&#x5728;&#x76F8;&#x5E94;&#x7684; DestinationRule &#x4E2D;&#x5B9A;&#x4E49;&#x3002;</td>
+<td>&#x5426;</td>
+</tr>
+<tr>
+<td>port</td>
+<td>PortSelector</td>
+<td>&#x6307;&#x5B9A;&#x8981;&#x5BFB;&#x5740;&#x7684;&#x4E3B;&#x673A;&#x4E0A;&#x7684;&#x7AEF;&#x53E3;&#x3002;&#x5982;&#x679C;&#x670D;&#x52A1;&#x4EC5;&#x516C;&#x5F00;&#x4E00;&#x4E2A;&#x7AEF;&#x53E3;&#xFF0C;&#x5219;&#x4E0D;&#x9700;&#x8981;&#x663E;&#x5F0F;&#x9009;&#x62E9;&#x8BE5;&#x7AEF;&#x53E3;&#x3002;</td>
+<td>&#x5426;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="portselector"><a name="portselector" class="anchor-navigation-ex-anchor" href="#portselector"><i class="fa fa-link" aria-hidden="true"></i></a>PortSelector</h2>
+<p>PortSelector &#x6307;&#x5B9A;&#x7528;&#x4E8E;&#x5339;&#x914D;&#x6216;&#x9009;&#x62E9;&#x6700;&#x7EC8;&#x8DEF;&#x7531;&#x7684;&#x7AEF;&#x53E3;&#x53F7;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x5B57;&#x6BB5;&#x529F;&#x80FD;&#x63CF;&#x8FF0;</th>
+<th>&#x662F;&#x5426;&#x5FC5;&#x586B;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>number</td>
+<td>uint32</td>
+<td>&#x6B63;&#x786E;&#x7684;&#x7AEF;&#x53E3;&#x53F7;</td>
+<td>&#x5426;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="httpredirect"><a name="httpredirect" class="anchor-navigation-ex-anchor" href="#httpredirect"><i class="fa fa-link" aria-hidden="true"></i></a>HTTPRedirect</h2>
+<h2 id="httprewrite"><a name="httprewrite" class="anchor-navigation-ex-anchor" href="#httprewrite"><i class="fa fa-link" aria-hidden="true"></i></a>HTTPRewrite</h2>
+<h2 id="duration"><a name="duration" class="anchor-navigation-ex-anchor" href="#duration"><i class="fa fa-link" aria-hidden="true"></i></a>Duration</h2>
+<h2 id="httpretry"><a name="httpretry" class="anchor-navigation-ex-anchor" href="#httpretry"><i class="fa fa-link" aria-hidden="true"></i></a>HTTPRetry</h2>
+<h2 id="httpfaultinjection"><a name="httpfaultinjection" class="anchor-navigation-ex-anchor" href="#httpfaultinjection"><i class="fa fa-link" aria-hidden="true"></i></a>HTTPFaultInjection</h2>
+<h2 id="headers"><a name="headers" class="anchor-navigation-ex-anchor" href="#headers"><i class="fa fa-link" aria-hidden="true"></i></a>Headers</h2>
+<p>&#x5F53; Envoy &#x5C06;&#x8BF7;&#x6C42;&#x8F6C;&#x53D1;&#x5230;&#x76EE;&#x6807;&#x670D;&#x52A1;&#x6216;&#x4ECE;&#x76EE;&#x6807;&#x670D;&#x52A1;&#x8F6C;&#x53D1;&#x54CD;&#x5E94;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x6D88;&#x606F;&#x5934;&#x3002; &#x53EF;&#x4EE5;&#x4E3A;&#x7279;&#x5B9A;&#x8DEF;&#x7531;&#x76EE;&#x7684;&#x5730;&#x6216;&#x6240;&#x6709;&#x76EE;&#x7684;&#x5730;&#x6307;&#x5B9A;&#x6807;&#x5934;&#x64CD;&#x4F5C;&#x89C4;&#x5219;&#x3002;
+&#x4EE5;&#x4E0B; VirtualService &#x5411;&#x8DEF;&#x7531;&#x5230;&#x4EFB;&#x4F55;&#x8BC4;&#x8BBA;&#x670D;&#x52A1;&#x76EE;&#x6807;&#x7684;&#x8BF7;&#x6C42;&#x6DFB;&#x52A0;&#x4E86;&#x4E00;&#x4E2A;&#x503C;&#x4E3A; test=true &#x7684; headers&#x3002;
+&#x5B83;&#x8FD8;&#x5220;&#x9664; foo &#x54CD;&#x5E94;&#x6807;&#x5934;&#xFF0C;&#x4F46;&#x4EC5;&#x6765;&#x81EA;&#x6765;&#x81EA;&#x8BC4;&#x8BBA;&#x670D;&#x52A1;&#x7684; v1 &#x5B50;&#x96C6;&#xFF08;&#x7248;&#x672C;&#xFF09;&#x7684;&#x54CD;&#x5E94;&#x3002;</p>
+<pre class="language-"><code class="lang-yaml"><span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> networking.istio.io/v1alpha3
+<span class="token key atrule">kind</span><span class="token punctuation">:</span> VirtualService
+<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> reviews<span class="token punctuation">-</span>route
+<span class="token key atrule">spec</span><span class="token punctuation">:</span>
+  <span class="token key atrule">hosts</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> reviews.prod.svc.cluster.local
+  <span class="token key atrule">http</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">headers</span><span class="token punctuation">:</span>
+      <span class="token key atrule">request</span><span class="token punctuation">:</span>
+        <span class="token key atrule">set</span><span class="token punctuation">:</span>
+          <span class="token key atrule">test</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">route</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">destination</span><span class="token punctuation">:</span>
+        <span class="token key atrule">host</span><span class="token punctuation">:</span> reviews.prod.svc.cluster.local
+        <span class="token key atrule">subset</span><span class="token punctuation">:</span> v2
+      <span class="token key atrule">weight</span><span class="token punctuation">:</span> <span class="token number">25</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">destination</span><span class="token punctuation">:</span>
+        <span class="token key atrule">host</span><span class="token punctuation">:</span> reviews.prod.svc.cluster.local
+        <span class="token key atrule">subset</span><span class="token punctuation">:</span> v1
+      <span class="token key atrule">headers</span><span class="token punctuation">:</span>
+        <span class="token key atrule">response</span><span class="token punctuation">:</span>
+          <span class="token key atrule">remove</span><span class="token punctuation">:</span>
+          <span class="token punctuation">-</span> foo
+      <span class="token key atrule">weight</span><span class="token punctuation">:</span> <span class="token number">75</span>
+</code></pre>
+<p>headers &#x7684;&#x5904;&#x7406;&#x64CD;&#x4F5C;&#x53EF;&#x4EE5;&#x51FA;&#x73B0;&#x5728; HTTPRoute &#x5757;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x51FA;&#x73B0;&#x5728; HTTPRouteDestination &#x5757;&#x4E2D;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x5B57;&#x6BB5;&#x529F;&#x80FD;&#x63CF;&#x8FF0;</th>
+<th>&#x662F;&#x5426;&#x5FC5;&#x586B;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>request</td>
+<td>HeaderOperations</td>
+<td>&#x5728;&#x5C06;&#x8BF7;&#x6C42;&#x8F6C;&#x53D1;&#x5230;&#x76EE;&#x6807;&#x670D;&#x52A1;&#x4E4B;&#x524D;&#x5BF9;&#x8BF7;&#x6C42;headers&#x7684;&#x64CD;&#x4F5C;&#x89C4;&#x5219;</td>
+<td>&#x5426;</td>
+</tr>
+<tr>
+<td>response</td>
+<td>HeaderOperations</td>
+<td>&#x5728;&#x5411;&#x8C03;&#x7528;&#x8005;&#x8FD4;&#x56DE;&#x54CD;&#x5E94;&#x4E4B;&#x524D;&#x8981;&#x5E94;&#x7528;&#x7684;headers&#x64CD;&#x4F5C;&#x89C4;&#x5219;</td>
+<td>&#x5426;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="headeroperations"><a name="headeroperations" class="anchor-navigation-ex-anchor" href="#headeroperations"><i class="fa fa-link" aria-hidden="true"></i></a>HeaderOperations</h2>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x5B57;&#x6BB5;&#x529F;&#x80FD;&#x63CF;&#x8FF0;</th>
+<th>&#x662F;&#x5426;&#x5FC5;&#x586B;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>set</td>
+<td>map<string, string=""></string,></td>
+<td>&#x7528;&#x7ED9;&#x5B9A;&#x7684;map&#x91CD;&#x5199;header&#x4E2D;&#x5BF9;&#x5E94;&#x7684;key</td>
+<td>&#x5426;</td>
+</tr>
+<tr>
+<td>add</td>
+<td>map<string, string=""></string,></td>
+<td>&#x5411;headers&#x4E2D;&#x6DFB;&#x52A0;&#x7ED9;&#x5B9A;&#x7684;map&#x4FE1;&#x606F;</td>
+<td>&#x5426;</td>
+</tr>
+<tr>
+<td>remove</td>
+<td>string[]</td>
+<td>&#x5220;&#x9664;headers&#x4E2D;&#x6307;&#x5B9A;&#x7684;&#x5B57;&#x6BB5;</td>
+<td>&#x5426;</td>
+</tr>
+</tbody>
+</table>
+<p><footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> By <a href="https://github.com/wangzhe0912" target="_blank">wangzhe0912</a>&#xFF0C;&#x4F7F;&#x7528;<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">&#x77E5;&#x8BC6;&#x5171;&#x4EAB; &#x7F72;&#x540D;-&#x76F8;&#x540C;&#x65B9;&#x5F0F;&#x5171;&#x4EAB; 4.0&#x534F;&#x8BAE;</a>&#x53D1;&#x5E03; </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> &#x6B64;&#x9875;&#x9762;&#x4FEE;&#x8BA2;&#x4E8E;&#xFF1A; 2021-07-17 09:03:42 </span> </footer><hr><div id="vcomments"></div><script src="//unpkg.com/valine/dist/Valine.min.js"></script><script>new Valine({el: "#vcomments",appId: 'tE5W1eagY05N4M7ScOhP2gJM-gzGzoHsz',appKey: '1MzIFXCWSBYoIsM7JKg4X6So',placeholder: 'Just go go',avatar: '',meta: undefined,pageSize: 10,lang: 'zh-CN',recordIP: false})</script></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="config.html" class="navigation navigation-prev " aria-label="Previous page: 配置">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="destination_rule.html" class="navigation navigation-next " aria-label="Next page: 流量管理之 DestinationRule">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"流量管理之 VirtualService","level":"7.1.1","depth":2,"next":{"title":"流量管理之 DestinationRule","level":"7.1.2","depth":2,"path":"chap06/destination_rule.md","ref":"chap06/destination_rule.md","articles":[]},"previous":{"title":"配置","level":"7.1","depth":1,"path":"chap06/config.md","ref":"chap06/config.md","articles":[{"title":"流量管理之 VirtualService","level":"7.1.1","depth":2,"path":"chap06/virtual_service.md","ref":"chap06/virtual_service.md","articles":[]},{"title":"流量管理之 DestinationRule","level":"7.1.2","depth":2,"path":"chap06/destination_rule.md","ref":"chap06/destination_rule.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","-sharing","github-buttons","editlink","ga","-highlight","prism","bibtex-indexed-cite","anchor-navigation-ex","page-footer-ex","splitter","copy-code-button","expandable-chapters-small","valine","donate"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"ignore":["mermaid","eval-js"],"css":["prismjs/themes/prism-solarizedlight.css"]},"editlink":{"label":"Edit","multilingual":false,"base":"https://github.com/wangzhe0912/istio-book/blob/master"},"page-footer-ex":{"copyright":"By [wangzhe0912](https://github.com/wangzhe0912)，使用[知识共享 署名-相同方式共享 4.0协议](https://creativecommons.org/licenses/by-sa/4.0/)发布","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"此页面修订于："},"splitter":{},"search-pro":{"cutWordLib":"nodejieba","defineWord":["Gitbook Use"]},"donate":{"alipay":"https://wangzhe0912.github.io/istio-book/alipay.jpg","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"https://wangzhe0912.github.io/istio-book/wechat.jpg","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"bibtex-indexed-cite":{"path":"/"},"github-buttons":{"buttons":[{"user":"wangzhe0912","repo":"istio-book","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-131910384-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"valine":{"avatar":"","lang":"zh-CN","pageSize":10,"placeholder":"Just go go","recordIP":false,"appId":"tE5W1eagY05N4M7ScOhP2gJM-gzGzoHsz","appKey":"1MzIFXCWSBYoIsM7JKg4X6So"}},"theme":"default","author":"","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"bibCount":0,"variables":{},"title":"title","bib":[],"gitbook":"*"},"file":{"path":"chap06/virtual_service.md","mtime":"2021-07-17T09:03:42.837Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-07-17T09:04:35.078Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-editlink/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
