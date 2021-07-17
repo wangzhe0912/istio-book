@@ -56,6 +56,9 @@
 
 ## 附录
 
+* [配置](chap06/config.md)
+  * [流量管理之 VirtualService](chap06/virtual_service.md)
+  * [流量管理之 DestinationRule](chap06/destination_rule.md)
 
 
 ## FAQ
